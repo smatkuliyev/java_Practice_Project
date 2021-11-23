@@ -14,10 +14,8 @@ public class Q04_OCAType {
          * C) 421
          * D) 9 10
          * E) Nothing is printed
-         * F) 10 9
+ cevap *** F) 10 9
          */
-        
-        String a;
         
 	}
 

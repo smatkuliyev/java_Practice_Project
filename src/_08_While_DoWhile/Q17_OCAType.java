@@ -7,9 +7,7 @@ public class Q17_OCAType {
 	 */
 
 	public static void main(String[] args) {
-		
-		int a;
-		
+	
 		int i = 3;
         while (i < 6) {
             System.out.println(i);
@@ -21,7 +19,7 @@ public class Q17_OCAType {
 	//      5
 	//      6
 
-    //		B) 3
+    //	B)  3		cevap B)
 	//      4
 	//      5
 
