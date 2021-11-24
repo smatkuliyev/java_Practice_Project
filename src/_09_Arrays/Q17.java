@@ -5,7 +5,7 @@ public class Q17 {
 //Civataları somunlara eşlemek için nasıl bir algoritma yazarsınız.
 
     public static void main(String[] args) {
-
+    	int a;
     }
 
 }
