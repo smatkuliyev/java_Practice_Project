@@ -10,7 +10,8 @@ public class Q05 {
 		int sayi = scan.nextInt();
 
 		System.out.println(basamakToplama(sayi));
-
+		
+		scan.close();
 	}
 	
 public static int basamakToplama(int sayi) {

@@ -6,8 +6,6 @@ public class Q17_AAA {
 
     public static void main(String[] args) {
     	
-    	int a;
-    	
     	int[] arrSomun = {1, 3, 4, 5, 2};
         int[] arrCivata = {1, 2, 3, 4, 5};  	//	{1, 2, 3, 6, 5};
 
@@ -15,8 +13,7 @@ public class Q17_AAA {
         arrCivata = dizinYap(arrCivata);
         for (int i = 0; i < arrCivata.length; i++) {
             System.out.println("arrCivata = " + arrCivata[i] + " arrSomun :" + arrSomun[i]);
-        }        
-        
+        }              
     }
 
 	private static int[] dizinYap(int[] arrA) {
@@ -31,5 +28,4 @@ public class Q17_AAA {
            }
 		return arrA;
 	}
-
 }

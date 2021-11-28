@@ -28,6 +28,7 @@ public class Q14 {
 		}
 		System.out.print(" = " +factorial);
 		
+		scan.close();
 	}
 
 }

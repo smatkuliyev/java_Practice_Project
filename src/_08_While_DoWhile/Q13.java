@@ -12,7 +12,7 @@ public class Q13 {
          * indirim yapin
          */
 		
-		int a;
+
 
 	}
 

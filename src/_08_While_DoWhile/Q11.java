@@ -1,5 +1,7 @@
 package _08_While_DoWhile;
 
+import java.util.Scanner;
+
 public class Q11 {
 	 /*
     Girilen pozitif bir sayýnýn tam kare olup olmadýðýný bulunuz,
@@ -19,8 +21,25 @@ public class Q11 {
   */
 
 	public static void main(String[] args) {
-		int a;
+		Scanner scan = new Scanner(System.in);
+        System.out.print("bir sayý giriniz : ");
+        int sayi = scan.nextInt();
 
+        int count = 0;
+        boolean a = false;
+
+        while (count * count <= sayi) {
+            if (count * count == sayi) {
+                System.out.println("true");
+                a = true;
+            }
+            count++;
+        }
+        if (a == false) {
+        	System.out.println("false");
+        }
+        
+        scan.close();
 	}
 
 }
