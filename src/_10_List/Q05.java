@@ -8,9 +8,31 @@ public class Q05 {
         // Kullanicidan alacaginiz 6 elemanli bir dizinin
         // sadece tek elemanlarini ayri diziye bir metodda atayarak
         // main de yazdiriniz.
-
+    	
+    	 Scanner scan = new Scanner(System.in);
+         int arr[] = new int[6];
+         
+         for (int i = 0; i < 6; i++) {
+             System.out.print("sayi giriniz : ");
+             arr[i] = scan.nextInt();
+         }
+         System.out.println(tekEleman(arr));
+         
+         scan.close();
+     }
+    
+     private static ArrayList<Integer> tekEleman(int[] arr) {
+    	 
+         ArrayList<Integer> list = new ArrayList<>();//bos list icine tek elemanlar atanacak
+         
+         for (int i = 0; i < arr.length; i++) {
+             if (arr[i] % 2 == 1) {
+                 list.add(arr[i]);
+             }
+             
+         }
+         return list;
 
     }
-
 
 }
