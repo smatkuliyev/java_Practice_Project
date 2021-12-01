@@ -8,21 +8,21 @@ import java.util.Scanner;
 
 public class QMarket {
 	/*
-	 * Bir bakkalın 7 günlük tüm kazançlarını günlük olarak gösteren bir program yazınız.
-	 * Ayrıca bakkalın bu hafta ortalama kazandığı miktarı gösteren bir method yazınız.
-	 * Ayrıca bakkalın hangi günler ortalamanın üstüne kazandığını gösteren bir method yazınız.
-	 * Ayrıca bakkalın hangi günler ortalamanın altında kazandığını gösteren bir method yazınız.
+	 * Bir bakkalin 7 gunluk tum kazanclarini gunluk olarak gosteren bir program yaziniz.
+	 * Ayrica bakkalin bu hafta ortalama kazandigi miktari gosteren bir method yaziniz.
+	 * Ayrica bakkalin hangi gunler ortalamanin ustune kazandigini gosteren bir method yaziniz.
+	 * Ayrica bakkalin hangi gunler ortalamanin altinda kazandigini gosteren bir method yaziniz.
 	 *
-	 * 1. Adım : Günleri içeren bir tane ArrayList oluşturun. (gunler)
-	 * 2. Adım : Günlük kazançları ekleyeceğimiz bir tane ArrayList oluşturun. (gunlukKazanclar)
-	 * 3. Adım : While döngüsü ile kullanıcıdan 7 günlük kazançları tekek teker alıp gunlukKazanclar ArrayList'e ekle.
-	 * 4. Adım : getOrtalamaKazanc() adlı method ile ortalama kazancı alın.
-	 * 5. Adım : getOrtalamaninUstundeKazancGünleri() adlı method oluşturun.
-	 * 			 for döngüsü ile tüm günleri ortalama kazanç ile karşılaştır
-	 * 			 ortalama kazançtan yüksekse o günleri return yap.
-	 * 6. Adım : getOrtalamaninAltindaKazancGünleri() adlı method oluşturun.
-	 * 			 for döngüsü ile tüm günleri ortalama kazanç ile karşılaştır
-	 * 			 ortalama kazançtan aşağıysa o günleri return yap.
+	 * 1. Adim : Gunleri iceren bir tane ArrayList olusturun. (gunler)
+	 * 2. Adim : Gunluk kazanclari ekleyecegimiz bir tane ArrayList olusturun. (gunlukKazanclar)
+	 * 3. Adim : While dongusu ile kullanicidan 7 gunluk kazanclari tekek teker alip gunlukKazanclar ArrayList'e ekle.
+	 * 4. Adim : getOrtalamaKazanc() adli method ile ortalama kazanci alin.
+	 * 5. Adim : getOrtalamaninUstundeKazancGunleri() adli method olusturun.
+	 * 			 for dongusu ile tum gunleri ortalama kazanc ile karsilastir
+	 * 			 ortalama kazanctan yuksekse o gunleri return yap.
+	 * 6. Adim : getOrtalamaninAltindaKazancGunleri() adli method olusturun.
+	 * 			 for dongusu ile tum gunleri ortalama kazanc ile karsilastir
+	 * 			 ortalama kazanctan asagiysa o gunleri return yap.
 	 * */
 
 
