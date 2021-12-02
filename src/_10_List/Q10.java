@@ -9,36 +9,30 @@ public class Q10 {
      * type a program to create a new array whose elements are like {3, 5+1, 2+7+9, 2+3+5+7}
      */
     public static void main(String[] args) {
-    	
-int arr1[] = {3,5,1,2,7,9,2,3,5,7};
-        
-        List<Integer> list = new ArrayList<>();
-        int a = 0;
-        int k = 0;
-        
-        for (int i = 0; i < arr1.length; i++) {
-            
-            if (i == 0) {
-                a = arr1[i];
-            }
-            if (i == 2) {
-                a = arr1[i] + arr1[i-1];
-            }   
-            if (i == 5) {
-                a = arr1[i] + arr1[i-1] + arr1[i-2];
-            }
-            if (i == 9) {
-                a = arr1[i] + arr1[i-1] + arr1[i-2] + arr1[i-3];
-            }               
-            
-            list.add(a);
-            
-            k++;
-            i+=k;
-        }
-        int c;
-        
-        System.out.println(list);
-    	
+    	 int arr[] = {3, 5, 1, 2, 7, 9, 2, 3, 5, 7,};
+         //3, 5+1, 2+7+9, 2+3+5+7
+         System.out.println(buNasilMethod(arr));
     }
+
+	private static List<Integer> buNasilMethod(int[] arr) {
+		 List<Integer> list = new ArrayList<>();
+	        
+	        int count = 0;
+	        int kullanilan = 1;
+	        
+	        while (arr.length - kullanilan >= count) {
+	            int toplam = 0;
+	            
+	            for (int i = 0; i <= count; i++) {
+	                toplam+=arr[kullanilan - 1 + i];
+	            }
+	            
+	            count++;
+	            kullanilan+=count;
+	            list.add(toplam);
+	        }
+	        
+	        
+	        return list;
+	}
 }
