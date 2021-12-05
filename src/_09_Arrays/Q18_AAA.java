@@ -1,7 +1,5 @@
 package _09_Arrays;
 
-import java.util.Arrays;
-
 public class Q18_AAA {
     public static void main(String[] args) {
         // kullanicidan alinan bir  String'deki herbir  karakterin adedini bir array icinde yazdiran bir java programi yazin.

@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ArrayListMethods {
 
-	@SuppressWarnings({ "unused", "serial" })
+	@SuppressWarnings({ "unused", "serial", "unlikely-arg-type" })
 	public static void main(String[] args) {
 		/*
 	     Array List genel Tanimi:
