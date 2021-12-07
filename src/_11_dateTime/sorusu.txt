@@ -1,0 +1,24 @@
+
+
+  /*
+     Bu uygulama kulanicilarin bir ArrayListe kayit zamanini da alarak
+     ekleyen ve sonrasinda her dakikanin ilk 10 saniyesinde kaydolanlari
+     sansli kullanici olarak ekrana yazdiran bir uygulamadir.
+     Bunun için;
+     1- Bir user class olusturun fields: name , registerDate (LocalDateTime cinsinden)
+     2- Registration isminde bir class olusturun ve register isminde bir metod
+     ekleyerek Kullanicidan user ismini alarak ArrayList e ekleyin ve bu list i
+     return edin.
+     3- Registration classi na ayni zamanda kendine verilen
+     ArrayListteki userlardan her dakikanin ilk 10 saniyesinde kaydolanlari
+     yazdiran printHappyUsers isminde bir metod daha ekleyiniz.
+
+     ipucu calisacak main metodu asagidaki gibi olmalidir.
+
+     public static void main(String[] args) {
+     Registration userReg = new Registration();
+     ArrayList<User> register = userReg.register();
+      userReg.printHappyUsers(register);
+     }
+
+     */
