@@ -1,0 +1,12 @@
+
+
+
+   1- filedlari(encapsulated) id, username, password, active (boolean), signedIn (boolean)
+      olan User isimli bir class create ediniz.
+   2- butun fieldlari parametre alan bir constructor tanimlayiniz.
+   4- UserMain isminde main icin bir class create ediniz.
+   5- Kullanicidan 2 adet user bilgisi isteyerek bir ArrayList e atayiniz.
+      active ve signedIn default olarak true, false atayabilirsiniz.
+      id yi sistemde otomatik aliniz.,
+   6- eğer password 6 dan kucuk olursa yeniden kullanici girisi isteyin.passwordun
+      6 karakterden kucuk olup olmadiğini classin icinde kontrol ediniz.
