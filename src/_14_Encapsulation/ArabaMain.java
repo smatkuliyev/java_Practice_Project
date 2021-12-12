@@ -2,6 +2,7 @@ package _14_Encapsulation;
 
 public class ArabaMain {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
         Araba honda = new Araba();//p'siz cons honda obj create edildi
