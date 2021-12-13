@@ -2,7 +2,7 @@ package kitapYonetimi;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+// import java.util.Scanner;
 
 /*
 1.	Kullanıcının Kitap ekleme, silme ve listeleme gibi
