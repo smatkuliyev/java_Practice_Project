@@ -1,0 +1,18 @@
+1-
+       kullanýcý  islem fields -->
+                   String alinacakSehir;
+                   String alinacakGun; (MM,dd--> ay gun formatýnda olmalý)
+                   double alisSaati;
+                   String teslimGunu;  (MM,dd--> ay gun formatýnda olmalý)
+                   double teslimSaati;
+
+       arac fields -->
+                       String marka; (liste araclari --> opel toyota volvo)
+                       String model;  (astra corolla s60)
+                       String yakitTipi;  (diesel benzin)
+                       String vites; (manuel otomatik)
+                       double gunlukUcret; ( 100 120 150... liste dýsý arac=300)
+
+  2-musteriden  yukarida ozellikleri verilen liste araclardan  tercihini alýnýz. eger musteri farklý bir arac talep ederse
+   talep ettigi aracýn fields'larýný alýnýz.
+   musterinin ad, soyad, yas, telefon, id  ve kredi kartý bilgileri ile   arac tercihine ve islemine gore odemesini gerçekleþtriniz..
