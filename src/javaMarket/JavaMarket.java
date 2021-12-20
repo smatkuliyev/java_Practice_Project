@@ -1,4 +1,4 @@
-package javaProjects.JavaMarket;
+package javaMarket;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package javaProjects;
+package javaBankAtm;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -46,7 +46,7 @@ class P01_JavaBankAtm {
 
 
     public static void atmPanel() {
-        System.out.println("Ｋｏｎｔｒｏｌ ｅｄｉｌｉｙｏｒ．．．");
+        System.out.println("Ｋ�?�?ｔｒ�?ｌ ｅｄｉｌｉｙ�?ｒ�?�?�?");
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("Sifreniz dogrulandi !\n");
 
