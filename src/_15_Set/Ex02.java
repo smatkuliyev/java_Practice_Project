@@ -14,7 +14,7 @@ public class Ex02 {
             elemanlari 0-20 arasinda 2 adet ArrayList olusturun
         2.  Bu iki list'in ortak elemanlarini bulunuz
         3.  Bu iki list'in farkli olan elemanlarini bulunuz
-        4.  Bu listleri birbirine ekleyip önce kücükten büyüge sonra ters siralayiniz
+        4.  Bu listleri birbirine ekleyip once kucukten buyuge sonra ters siralayiniz
 
      */
 
@@ -22,7 +22,7 @@ public class Ex02 {
     public static void main(String[] args) {
 
         //   System.out.println(arrListHazirla(10,5,10)); // metodu burada parantez içinde kullanabiliriz.
-        //   değişken ataması yapar.
+        //   değişken atamasi yapar.
 
         //    ArrayList<Integer>arrayList1 = new ArrayList<>(arrListHazirla(10,5,10));
 
@@ -44,19 +44,19 @@ public class Ex02 {
         arrayListFark1 = arrayList1;
         arrayListFark2 = arrayList2;
 
-        arrayListFark1.removeAll(arrayList2); //1 in 2 den farkı
+        arrayListFark1.removeAll(arrayList2); //1 in 2 den farki
         System.out.println("arrListFark1 = " + arrayListFark1);
-                arrayListFark2.removeAll(arrayList1); //2nin 1 den farkı
+                arrayListFark2.removeAll(arrayList1); //2nin 1 den farki
         System.out.println("arrListFark2 = " + arrayListFark2);
 
-        //     arrayListFark1.addAll(arrayListFark2); // Farkların birleşimi
-        //      System.out.println("arrListFarkların birleşimi =" + arrayListFark1);
+        //     arrayListFark1.addAll(arrayListFark2); // Farklarin birleşimi
+        //      System.out.println("arrListFarklarin birleşimi =" + arrayListFark1);
 
-        Collections.sort(arrayListFark1); // Farkın sıralanması
-        System.out.println("Fark1 in sıralanmış hali = " + arrayListFark1);
+        Collections.sort(arrayListFark1); // Farkin siralanmasi
+        System.out.println("Fark1 in siralanmiş hali = " + arrayListFark1);
 
-        Collections.reverse(arrayListFark1); // Farkın tersten yazdırılması
-        System.out.println("Fark2 in sıralanmış hali =" + arrayListFark1);
+        Collections.reverse(arrayListFark1); // Farkin tersten yazdirilmasi
+        System.out.println("Fark2 in siralanmiş hali =" + arrayListFark1);
     }
 
     public static int getRandom(int min, int max) {
@@ -91,15 +91,15 @@ ArrayList<Integer> list1 = new ArrayList<>();
         yeniL2=list2;
         yeniL1.removeAll(list2);//l1 olup l2 de olmayanalar=l1-l2
         yeniL2.removeAll(list1);//l2 de olup l1 de olmayanlar=l2-l1
-        System.out.println("l1 deki farklı elemanlar :" + yeniL1);
-        System.out.println("l2 deki farklı elemanlar :" + yeniL2);
-        yeniL1.addAll(yeniL2);//l1 ve l2 benzeesiz farklı elemanlrını l1 e atadık
-        System.out.println("l1 ve l2 deki farklı elemanlar hepsi :" + yeniL1);
+        System.out.println("l1 deki farkli elemanlar :" + yeniL1);
+        System.out.println("l2 deki farkli elemanlar :" + yeniL2);
+        yeniL1.addAll(yeniL2);//l1 ve l2 benzeesiz farkli elemanlrini l1 e atadik
+        System.out.println("l1 ve l2 deki farkli elemanlar hepsi :" + yeniL1);
     }
     private static ArrayList<Integer> listCreat(int boyut, int min, int max) {
         ArrayList<Integer> liste = new ArrayList<>();
         for (int i = 0; i < boyut; i++) {
-            liste.add((int) (min + Math.random() * (max - min + 1)));// başladığın +rastgelesayı*(bittiğin-başladığın+1)=başladığın ile bittiğin arasındaki rastgele sayılar
+            liste.add((int) (min + Math.random() * (max - min + 1)));// başladiğin +rastgelesayi*(bittiğin-başladiğin+1)=başladiğin ile bittiğin arasindaki rastgele sayilar
         }
         return liste;
     }

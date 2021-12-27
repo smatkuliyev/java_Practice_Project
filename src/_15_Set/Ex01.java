@@ -15,24 +15,27 @@ public class Ex01 {
 
         HashSet<Integer> hs = new HashSet<>();
         int[] arr = new int[]{10, 11, 12, 13, 24};
-        elementEkle(hs, new int[]{3,5,7,9});//int[]arr=new int[]{3,5,7,9} farklı gösterim
-        elementEkle(hs, arr);//int[]arr=new int[]{10, 11, 12, 13, 24}
+ //       elementEkle(hs, new int[]{3,5,7,9});//int[]arr=new int[]{3,5,7,9} farklı gösterim
+       elementEkle(hs, arr);//int[]arr=new int[]{10, 11, 12, 13, 24}
         yazdir(hs);
 
     }
 
-    public static void elementEkle(HashSet<Integer> hset, int[] arr) {
+	private static void yazdir(HashSet<Integer> hs) {
+		for (Integer w : hs) {
+			System.out.print(w+" ");
+		}
+		
+	}
 
-        HashSet<Integer> hs = new HashSet<>();
-        for (Integer num : arr) {
-            hs.add(num);
-        }
-        System.out.println(hs);
-    }
-
-    public static void yazdir(HashSet<Integer> set) {
-        for (Integer sayi : set) {
-            System.out.println(sayi);
-        }
-    }
+	private static void elementEkle(HashSet<Integer> hset, int[] arr) {
+		HashSet<Integer> hs = new HashSet<>();
+		
+		for (int w : arr) {
+			hs.add(w);			
+		}
+		System.out.println(hs);
+	}
+    
+    
 }

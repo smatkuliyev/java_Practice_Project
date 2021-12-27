@@ -1,4 +1,4 @@
-package javaProjects.aracKiralama;
+package aracKiralama;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -19,18 +19,19 @@ public class Ex04 {
         LinkedList<String> ll = new LinkedList<>(Arrays.asList("Ali", "Veli", "Ayse", "Can"));
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("İsim giriniz :");
+        System.out.println("Isim giriniz :");
         String isim = scan.nextLine();
 
        
             if (ll.remove(isim)) {
                
-                System.out.println("bu isim Linked da vardı ve silindi :" + ll);
+                System.out.println("bu isim Linked da vardi ve silindi :" + ll);
                 
             } else {
 
                 System.out.println("Bu isim linked listte yoktu silinemedi :" + ll);
             }
+            scan.close();
         
     }
 }

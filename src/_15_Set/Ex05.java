@@ -21,8 +21,8 @@ public class Ex05 {
 
 	public static int[] tekrarlariSil(int[] arr) {
 			
-		Set<Integer> set1 = new HashSet<>();//Set Hashset'in parent'i olduğu için HasHSet metodlarını kullanamaz ama daha hızlı çalışır.
-											// SEt interface oldğ için obj oluşturulamaz HashSet Class olduğu için new ile obj oluşturduk.
+		Set<Integer> set1 = new HashSet<>();//Set Hashset'in parent'i oldugu icin HasHSet metodlarini kullanamaz ama daha hizli calisir.
+											// SEt interface oldg icin obj olusturulamaz HashSet Class oldugu icin new ile obj olusturduk.
 		for (Integer each : arr) {
 			set1.add(each);
 			}	

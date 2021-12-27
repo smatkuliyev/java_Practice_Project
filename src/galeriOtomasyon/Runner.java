@@ -1,4 +1,4 @@
-package javaProjects.galeriOtomasyon;
+package galeriOtomasyon;
 public class Runner {
     public static void main(String[] args) {
         
@@ -17,7 +17,7 @@ public class Runner {
         
         
         
-        
+        String test= "uyari vermemis icin";
         
         
     }

@@ -20,6 +20,7 @@ public class HashSet03 {
         TreeSet<String > ts1 =new TreeSet<>(Arrays.asList("said", "oguz", "levent", "oner", "sedef"));
 
         long stop1=System.currentTimeMillis();
+        System.out.println(ts1);
         System.out.println("treeSet hizi :"+(stop1-start1));
 
 
@@ -32,7 +33,7 @@ public class HashSet03 {
         System.out.println(ts);//[levent, oguz, oner, said, sedef]
         long stop=System.currentTimeMillis();
         System.out.println("hashSet ile hizi: "+(stop-start));
-
+        
 
 
 

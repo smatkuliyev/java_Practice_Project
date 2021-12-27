@@ -1,11 +1,11 @@
-package javaProjects.hastaneOtomasyon;
+package hastaneOtomasyon;
 public class HastaneRunner {
     private static Hastane hastane = new Hastane();
     
     
     public static void main(String[] args) {
         
-        String hastaDurumu = "Kalp hastaliklari";
+        String hastaDurumu = "Allerji";
         String unvan  = doktorUnvan(hastaDurumu);
         
         hastane.setDoktor(doktorBul(unvan));
@@ -14,7 +14,7 @@ public class HastaneRunner {
         System.out.println("Doktor soy isim: "+hastane.getDoktor().getSoyIsim());
         System.out.println("Doktor unvani: "+hastane.getDoktor().getUnvan());
         
-
+        String test= "uyari vermemis icin";
     }
     
     

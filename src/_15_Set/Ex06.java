@@ -5,9 +5,9 @@ import java.util.HashSet;
 
 public class Ex06 {
     public static void main(String[] args) {
-        // Soru 1 : Bir HashSet random olarak 10(set.size(10)) adet olacak şekilde
-        // 1 den 20 e kadar olan sayılarla doldurup yazdırın
-        // Soru 2 : Bu SET i bir fonksiyonda diziye çevirinizve yazdırınız.
+        // Soru 1 : Bir HashSet random olarak 10(set.size(10)) adet olacak sekilde
+        // 1 den 20 e kadar olan sayilarla doldurup yazdirin
+        // Soru 2 : Bu SET i bir fonksiyonda diziye ceviriniz ve yazdiriniz.
 
         HashSet<Integer> hs=generateSet();
         System.out.println("hs = " + hs);
@@ -19,7 +19,7 @@ public class Ex06 {
 
     public static Integer[] convertToArray(HashSet<Integer> hs)
     {
-        //1.Yöntem
+        //1.Yontem
         Integer[] dizi=new Integer[hs.size()];
 
         int index=0;
@@ -29,7 +29,7 @@ public class Ex06 {
             index++;
         }
 
-        //2.Yöntem
+        //2.Yontem
         dizi = hs.toArray(new Integer[hs.size()]);
 
         return dizi;
