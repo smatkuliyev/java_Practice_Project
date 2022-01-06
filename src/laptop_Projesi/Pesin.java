@@ -7,15 +7,16 @@ public class Pesin {
 	private static int indirimliFiyat;
 		
 		protected static void pesin(int toplam) {
-			Indirim obj=new Indirim();
+		//	Indirim obj=new Indirim();
 			
 			System.out.println("Toplam tutar "+toplam);
-			System.out.println("Indirim orani = "+" %"+obj.indirim);
-			indirimliFiyat = toplam-(toplam*obj.indirim/100);
+			System.out.println("Indirim orani = "+" %"+Indirim.indirim);
+			indirimliFiyat = toplam-(toplam*Indirim.indirim/100);
 			System.out.println("Odenecek Tutar = "+indirimliFiyat);
 			
-			for(int i=1; i > 0 ;i++) {
 			Scanner scan=new Scanner (System.in);
+			for(int i=1; i > 0 ;i++) {
+			
 			System.out.println("Lutfen yapacaginiz odemenin tutarini giriniz");
 			int tutar=scan.nextInt();
 			if(tutar == indirimliFiyat) {
@@ -29,7 +30,7 @@ public class Pesin {
 			}
 			
 			}
-			
+			scan.close();
 		}
 	
 

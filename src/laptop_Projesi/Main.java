@@ -18,7 +18,7 @@ public class Main {
 
 	private static void islem() {
 		Scanner scan = new Scanner (System.in);
-		System.out.println("\n***** QA Computer'a HOSGELDİNİZ *****\n");
+		System.out.println("\n***** QA Computer'a HOSGELDINIZ *****\n");
 		System.out.println("\t1 ==> Laptop'lari incelemek istiyorum"
 				+"\n\t2 ==> Cikis\n");
 		System.out.print("Isleminizi seciniz ==> ");
@@ -72,7 +72,8 @@ public class Main {
 
 	private static void cikis() {
 		
-		System.out.println("\nIYI GUNLER DILERIZ \n\tBIZI TERCİH ETTIGINIZ ICIN \n\t\t\t TESEKKUR EDERIZ");
+		System.out.println("\nIYI GUNLER DILERIZ \n\tBIZI TERCIH ETTIGINIZ ICIN \n\t\t\t TESEKKUR EDERIZ");
+		System.exit(0);
 				
 	}
 
@@ -94,6 +95,7 @@ public class Main {
 				odeme();
 			}
 		
+			cikis();
 		
 	}
 

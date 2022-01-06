@@ -12,7 +12,8 @@ public class MusteriVeArabaBilgisiGirisi extends AracTalebi {
 
     static int toplamGun;
 
-    public static void aracTalep() {
+    @SuppressWarnings("unused")
+	public static void aracTalep() {
         System.out.println("Lutfen araci alacaginiz sehri giriniz:");
         String sehir = scan.nextLine();
         System.out.println("Lutfen teslim alacaginiz gunu giriniz: (Ornek: 12.04)");// ay ve gunu ayirmak mi yoksa string almak mi?
@@ -61,9 +62,9 @@ public class MusteriVeArabaBilgisiGirisi extends AracTalebi {
     public static void islemeDevamDongusu(){
         System.out.println("Devam etmek istiyorsaniz 'e' ye, istemiyorsaniz 'h' ye basin");
         String devam = scan.next();
-        if (devam=="e"){
+        if (devam.equalsIgnoreCase("e")){
             musteriBilgisi();
-        }else if(devam=="h"){
+        }else if(devam.equalsIgnoreCase("h")){
             arabalar();
         }
     }

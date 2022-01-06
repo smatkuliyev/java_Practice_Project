@@ -1,6 +1,5 @@
 package ajanda;
 
-import java.io.Console;
 import java.util.Scanner;
 
 public class Ajanda {
@@ -26,19 +25,19 @@ public class Ajanda {
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.println(
-				  "╔═══════════════════════╗\r\n"
-				+ "║    AJANDA MENUSU      ║\r\n"
-				+ "╚═══════════════════════╝\r\n"
-				+ "╔═══════════════════════╗\r\n"
-				+ "║ 1- Etkinlik Islemleri ║\r\n"
-				+ "╠═══════════════════════╣\r\n"
-				+ "║ 2- Rehber Islemleri   ║\r\n"
-				+ "╠═══════════════════════╣\r\n"
-				+ "║ 3- Randevu Durumu     ║\r\n"
-				+ "╠═══════════════════════╣\r\n"
-				+ "║ 4- Cikis              ║\r\n"
-				+ "╚═══════════════════════╝\r\n"
-				+ "Lütfen yapmak istenilen işlem numarasını giriniz");
+				  "â•”â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•—\r\n"
+				+ "â•‘    AJANDA MENUSU      â•‘\r\n"
+				+ "â•šâ•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�\r\n"
+				+ "â•”â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•—\r\n"
+				+ "â•‘ 1- Etkinlik Islemleri â•‘\r\n"
+				+ "â• â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•£\r\n"
+				+ "â•‘ 2- Rehber Islemleri   â•‘\r\n"
+				+ "â• â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•£\r\n"
+				+ "â•‘ 3- Randevu Durumu     â•‘\r\n"
+				+ "â• â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•£\r\n"
+				+ "â•‘ 4- Cikis              â•‘\r\n"
+				+ "â•šâ•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�\r\n"
+				+ "Lutfen yapmak istenilen islem numarasini giriniz");
 		int secim = scan.nextInt();
 
 		switch (secim) {
@@ -55,7 +54,7 @@ public class Ajanda {
 			break;
 		case 3:
 			randevuDurumu();
-			//System.out.println("Rendevu Durumu Aktif Değil");
+			//System.out.println("Rendevu Durumu Aktif Degil");
 			//ajandaMenu();
 
 			break;
@@ -64,9 +63,9 @@ public class Ajanda {
 			char cikis = scan.next().charAt(0);
 			if (cikis == 'e' || cikis == 'E') {
 				System.out.println(
-						  "╔════════════════════════════════════════╗\r\n"
-						+ "║   C I K I S   Y A P I L M I S T I R    ║\r\n"
-						+ "╚════════════════════════════════════════╝\r\n");
+						  "â•”â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•—\r\n"
+						+ "â•‘   C I K I S   Y A P I L M I S T I R    â•‘\r\n"
+						+ "â•šâ•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�\r\n");
 			} else {
 
 				ajandaMenu();
@@ -75,7 +74,7 @@ public class Ajanda {
 			break;
 
 		default:
-			System.out.println("Lütfen menüden bir seçim yapınız!");
+			System.out.println("Lutfen menuden bir secim yapiniz!");
 			
 			ajandaMenu();
 			break;
@@ -84,6 +83,7 @@ public class Ajanda {
 		scan.close();
 	}
 
+	@SuppressWarnings("resource")
 	private static void randevuDurumu() {
 		Scanner scan = new Scanner(System.in);
 		
@@ -94,8 +94,8 @@ public class Ajanda {
 
 				if (each.kisiAdSoyad.equalsIgnoreCase(each1.etkinlikKimIle)) {
 					System.out.println("Randevuuz " + each1.etkinlikKimIle+" ile "+ each1.etkinlikTarihi+" tarihinde "
-					+each1.etkinlikSaati+" saat diliminde "+each1.etkinlikAdi+" etkinliği bulunuyor.\n"
-							+ each1.etkinlikKimIle+" ile ilgili kişisel bilgiler aşağıda bulunmaktadır");				
+					+each1.etkinlikSaati+" saat diliminde "+each1.etkinlikAdi+" etkinligi bulunuyor.\n"
+							+ each1.etkinlikKimIle+" ile ilgili kisisel bilgiler asagida bulunmaktadir");				
 				
 					System.out.println(each);
 					
@@ -105,7 +105,7 @@ public class Ajanda {
 
 		}
 		
-		System.out.println("AJANDA MENUSUNE DONMEK ICIN 0 (çıkış) tuşuna basınız");
+		System.out.println("AJANDA MENUSUNE DONMEK ICIN 0 (cikis) tusuna basiniz");
 		
 		int secim=scan.nextInt();
 		

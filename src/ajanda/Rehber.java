@@ -30,16 +30,16 @@ public class Rehber {
 
 		Scanner scan = new Scanner(System.in);
 		System.out.println(
-				    "╔══════════════════════════╗\r\n"
-				  + "║  REHBER (KISI) MENUSU    ║\r\n"
-				  + "╠══════════════════════════╣\r\n"
-				  + "║ 1- KISI EKLE             ║\r\n"
-				  + "║ 2- KISI SİL              ║\r\n"
-				  + "║ 3- KISI DUZENLE          ║\r\n"
-				  + "║ 4- KISI BILGILERI        ║\r\n"
-				  + "║ 5- ANA MENUYE DON        ║\r\n"
-				  + "╚══════════════════════════╝\r\n"
-				+ "Lütfen yapmak istenilen işlem numarasını giriniz");
+				    "â•”â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•—\r\n"
+				  + "â•‘  REHBER (KISI) MENUSU    â•‘\r\n"
+				  + "â• â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•£\r\n"
+				  + "â•‘ 1- KISI EKLE             â•‘\r\n"
+				  + "â•‘ 2- KISI SIL              â•‘\r\n"
+				  + "â•‘ 3- KISI DUZENLE          â•‘\r\n"
+				  + "â•‘ 4- KISI BILGILERI        â•‘\r\n"
+				  + "â•‘ 5- ANA MENUYE DON        â•‘\r\n"
+				  + "â•šâ•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�\r\n"
+				+ "Lutfen yapmak istenilen islem numarasini giriniz");
 		try {
 			int secim = scan.nextInt();
 
@@ -79,7 +79,7 @@ public class Rehber {
 		
 		if (!rehberListesi.isEmpty()) {
 			for (int i = 0; i < rehberListesi.size(); i++) {
-				System.out.println((i + 1) + ". Kişi : " + rehberListesi.get(i).toString());
+				System.out.println((i + 1) + ". Kisi : " + rehberListesi.get(i).toString());
 			}
 			
 		}else {
@@ -97,12 +97,12 @@ public class Rehber {
 		
 		if (!rehberListesi.isEmpty()) {
 			for (int i = 0; i < rehberListesi.size(); i++) {
-				System.out.println((i + 1) + ". Kişi : " + rehberListesi.get(i).toString());
+				System.out.println((i + 1) + ". Kisi : " + rehberListesi.get(i).toString());
 			}
 
 		try {
 			Scanner scan = new Scanner(System.in);
-			System.out.println("Lutfen duzenlemek istediginiz etkinligin nosunu giriniz \nÇıkış için Sıfır (0) basınız");
+			System.out.println("Lutfen duzenlemek istediginiz etkinligin nosunu giriniz \ncikis icin Sifir (0) basiniz");
 			int secim1 = scan.nextInt();
 
 			if (secim1 == 0) {
@@ -110,20 +110,20 @@ public class Rehber {
 			}
 
 			if (secim1 > rehberListesi.size() || secim1 < 0) {
-				System.out.println("Lütfen Listeden birini seçin");
+				System.out.println("Lutfen Listeden birini secin");
 				rehberDuzenleme();
 			}
 
 			System.out.println(""
-					+ "╔══════════════════════════╗\r\n"
-					+ "║ REHBER DUZENLEME MENUSU  ║\r\n"
-					+ "╠══════════════════════════╣\r\n" 
-					+ "║ 1- Kisi Adi Soyadı       ║\r\n"
-					+ "║ 2- Kisi Telefonu         ║\r\n" 
-					+ "║ 3- Kisi E-Mail Adresi    ║\r\n"
-					+ "║ 4- Posta Adresi          ║\r\n" 
-					+ "║ 5- Rehber Menusune Git   ║\r\n" 
-					+ "╚══════════════════════════╝\r\n"
+					+ "â•”â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•—\r\n"
+					+ "â•‘ REHBER DUZENLEME MENUSU  â•‘\r\n"
+					+ "â• â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•£\r\n" 
+					+ "â•‘ 1- Kisi Adi Soyadi       â•‘\r\n"
+					+ "â•‘ 2- Kisi Telefonu         â•‘\r\n" 
+					+ "â•‘ 3- Kisi E-Mail Adresi    â•‘\r\n"
+					+ "â•‘ 4- Posta Adresi          â•‘\r\n" 
+					+ "â•‘ 5- Rehber Menusune Git   â•‘\r\n" 
+					+ "â•šâ•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�\r\n"
 					+ "Lutfen yapmak istenilen islem numarasini giriniz");
 
 			int secim = scan.nextInt();
@@ -133,7 +133,7 @@ public class Rehber {
 				System.out.println("Kisinin Yeni Adini Soyadini Girin");
 				rehberListesi.get(secim1 - 1).kisiAdSoyad = scan.nextLine();
 				rehberListesi.get(secim1 - 1).kisiAdSoyad = scan.nextLine();
-				System.out.println(new String(new char[70]).replace("\0", "\r\n"));	//Ekranı temizleme
+				System.out.println(new String(new char[70]).replace("\0", "\r\n"));	//Ekrani temizleme
 				
 				Ayarlar.bildirimYaz("KISI DUZENLEMESI BASARILI YAPILMISTIR.");
 				
@@ -155,7 +155,7 @@ public class Rehber {
 
 				while (!yeniKisiEmail.contains("@") || !yeniKisiEmail.contains(".")) {
 
-					System.out.println("Lütfen email adresini doğru giriniz. '@' veya '.' karakterlerine dikkat ediniz.");
+					System.out.println("Lutfen email adresini dogru giriniz. '@' veya '.' karakterlerine dikkat ediniz.");
 					String TkrkisiEmail = scan.nextLine();
 					yeniKisiEmail = TkrkisiEmail;
 				}
@@ -202,15 +202,15 @@ public class Rehber {
 
 	public void rehberKisiEkle() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Ad Soyadı giriniz ");
+		System.out.println("Ad Soyadi giriniz ");
 		String kisiAdSoyad = scan.nextLine();
 
 		if (Data.adSoyad.contains(kisiAdSoyad)) {
-			System.out.println("Girilen Ad Soyad kayıtlı kişi var. Lütfen başka bir isim ile kayıt eleyiniz.");
+			System.out.println("Girilen Ad Soyad kayitli kisi var. Lutfen baska bir isim ile kayit eleyiniz.");
 			rehberKisiEkle();
 		}
 
-		System.out.println("Telefon numarası giriniz ");
+		System.out.println("Telefon numarasi giriniz ");
 		String kisiTelefon = scan.nextLine();
 
 		System.out.println("e-mail adresini giriniz ");
@@ -218,7 +218,7 @@ public class Rehber {
 		
 		while (!kisiEmail.contains("@") || !kisiEmail.contains(".")) {
 
-			System.out.println("Lütfen email adresini doğru giriniz. '@' veya '.' karakterlerine dikkat ediniz.");
+			System.out.println("Lutfen email adresini dogru giriniz. '@' veya '.' karakterlerine dikkat ediniz.");
 			String TkrkisiEmail = scan.nextLine();
 			kisiEmail = TkrkisiEmail;
 			
@@ -247,14 +247,15 @@ public class Rehber {
 	}
 
 
+	@SuppressWarnings("resource")
 	private void rehberKisiSil() {
 
 		if (!rehberListesi.isEmpty()) {
 			for (int i = 0; i < rehberListesi.size(); i++) {
-				System.out.println((i + 1) + ". Kişi : " + rehberListesi.get(i).toString());
+				System.out.println((i + 1) + ". Kisi : " + rehberListesi.get(i).toString());
 			}
 			Scanner scan = new Scanner(System.in);
-			System.out.println("Rehberden Silmek istediginiz kisinin Numarasını giriniz ");
+			System.out.println("Rehberden Silmek istediginiz kisinin Numarasini giriniz ");
 
 			String kisiAdiSec=scan.nextLine();
 			
@@ -274,7 +275,7 @@ public class Rehber {
 				System.out.println(rehberListesi.remove(secim - 1).toString() + "\n " + secim
 						+ ". numarali Kisi Basari ile silinmistir.");
 				for (int i = 0; i < rehberListesi.size(); i++) {
-					System.out.println((i + 1) + ". Kişi : " + rehberListesi.get(i).toString());
+					System.out.println((i + 1) + ". Kisi : " + rehberListesi.get(i).toString());
 				}
 				rehberMenu();
 			}
@@ -288,11 +289,11 @@ public class Rehber {
 
 	@Override
 	public String toString() {
-		return   "\n╔════════════════════════════════════════╗" 
-				+"\n Adı Soyadı    : " + kisiAdSoyad+ "\n"
+		return   "\nâ•”â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•—" 
+				+"\n Adi Soyadi    : " + kisiAdSoyad+ "\n"
 				+" Telefonu      : " + kisiTel + "\n"
 				+" E-mail Adresi : " + kisiEmail + "\n"
 				+" Adresi        : " + kisiAdres + "\n"
-				+"╚════════════════════════════════════════╝";
+				+"â•šâ•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�";
 	}
 }

@@ -30,16 +30,16 @@ public class Etkinlik {
 	public void etkinlikMenu() {
 		Scanner scan = new Scanner(System.in);
 		System.out.println(
-				  "╔════════════════════════════╗\r\n"
-			    + "║  ETKİNLİK(RANDEVU) MENUSU  ║\r\n"
-				+ "╠════════════════════════════╣\r\n"
-			    + "║ 1- Etkinlik Ekle           ║\r\n"
-				+ "║ 2- Etkinlik Sil            ║\r\n"
-			    + "║ 3- Etkinlik Düzenle        ║\r\n"
-				+ "║ 4- Etkinlik Durumu         ║\r\n"
-			    + "║ 5- Çıkış (Ana Menüye Dön)  ║\r\n"
-				+ "╚════════════════════════════╝\r\n"
-			    + "Lütfen yapmak istenilen işlem numarasını giriniz");
+				  "â•”â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•—\r\n"
+			    + "â•‘  ETKINLIK(RANDEVU) MENUSU  â•‘\r\n"
+				+ "â• â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•£\r\n"
+			    + "â•‘ 1- Etkinlik Ekle           â•‘\r\n"
+				+ "â•‘ 2- Etkinlik Sil            â•‘\r\n"
+			    + "â•‘ 3- Etkinlik Duzenle        â•‘\r\n"
+				+ "â•‘ 4- Etkinlik Durumu         â•‘\r\n"
+			    + "â•‘ 5- Cikis (Ana Menuye Don)  â•‘\r\n"
+				+ "â•šâ•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�\r\n"
+			    + "Lutfen yapmak istenilen islem numarasini giriniz");
 
 		int secim = scan.nextInt();
 
@@ -86,28 +86,28 @@ public class Etkinlik {
 		for (int i = 0; i < Data.etkinlikler.size(); i++) {
 			System.out.println((i + 1) + "- " + Data.etkinlikler.get(i));
 		}
-		System.out.println("Lütfen bir etkinlik seçiniz");
+		System.out.println("Lutfen bir etkinlik seciniz");
 		int secim = scan.nextInt();
 		
 		if (secim==7) {
-			System.out.println("yeni etkinlik Adı giriniz");
+			System.out.println("yeni etkinlik Adi giriniz");
 			Data.etkinlikler.set(secim-1, scan.nextLine());
 			Data.etkinlikler.set(secim-1, scan.nextLine());
 		}
 		
 		etkinlikAdi = Data.etkinlikler.get(secim - 1);
 		
-		System.out.println("Lütfen etkinlik tarihini giriniz [gg/aa/yyyy]");
+		System.out.println("Lutfen etkinlik tarihini giriniz [gg/aa/yyyy]");
 		etkinlikTarihi = scan.next();
 
-		System.out.println("Lütfen etkinlik saatini giriniz [ss.dd]");
+		System.out.println("Lutfen etkinlik saatini giriniz [ss.dd]");
 		etkinlikSaati = scan.nextDouble();
 
-		System.out.println("Lütfen etkinlik Kim ile olduğunu giriniz");
+		System.out.println("Lutfen etkinlik Kim ile oldugunu giriniz");
 		etkinlikKimIle = scan.nextLine();
 		etkinlikKimIle = scan.nextLine();
 
-		System.out.println("Lütfen varsa etkinlik notunu giriniz.");
+		System.out.println("Lutfen varsa etkinlik notunu giriniz.");
 		etkinlikNotu = scan.nextLine();
 
 		Etkinlik etkinlikobj = new Etkinlik(etkinlikAdi, etkinlikTarihi, etkinlikSaati, etkinlikKimIle, etkinlikNotu);
@@ -128,6 +128,7 @@ public class Etkinlik {
 		scan.close();
 	}
 
+	@SuppressWarnings("resource")
 	private void etkinlikSil() {
 		Scanner scan = new Scanner(System.in);
 
@@ -136,15 +137,15 @@ public class Etkinlik {
 			System.out.println((i + 1) + ". " + etkinlikListesi.get(i).toString());
 		}
 
-		System.out.println("Silmek istediğiniz etkinligin nosunu giriniz ");
+		System.out.println("Silmek istediginiz etkinligin nosunu giriniz ");
 		int secim = scan.nextInt();
 
 		if (secim > etkinlikListesi.size() || secim <= 0) {
-			System.out.println("Lütfen Listeden birini seçin");
+			System.out.println("Lutfen Listeden birini secin");
 			etkinlikSil();
 		} else {
 			System.out.println(etkinlikListesi.remove(secim - 1).toString() + "\n" + "Basari ile silinmistir.");
-			System.out.println(new String(new char[70]).replace("\0", "\r\n"));	//Ekranı temizleme
+			System.out.println(new String(new char[70]).replace("\0", "\r\n"));	//Ekrani temizleme
 			etkinlikMenu();
 		}
 
@@ -159,7 +160,7 @@ public class Etkinlik {
 			System.out.println((i + 1) + ". " + etkinlikListesi.get(i).toString());
 		}
 
-		System.out.println("Lutfen duzenlemek istediginiz etkinligin nosunu giriniz \nÇıkış için Sıfır (0) basınız");
+		System.out.println("Lutfen duzenlemek istediginiz etkinligin nosunu giriniz \nCikis icin Sifir (0) basiniz");
 
 		int secim1 = scan.nextInt();
 
@@ -168,42 +169,42 @@ public class Etkinlik {
 		}
 
 		if (secim1 > etkinlikListesi.size() || secim1 < 0) {
-			System.out.println("Lütfen Listeden birini seçin");
+			System.out.println("Lutfen Listeden birini secin");
 			etkinlikDuzenlemeMenu();
 		}
 
 		System.out.println(""
-				+ "╔════════════════════════════╗\r\n" 
-				+ "║ ETKINLIK DUZENLEME MENUSU  ║\r\n"
-				+ "╠════════════════════════════╣\r\n" 
-				+ "║ 1- Etkinlik Adi            ║\r\n"
-				+ "║ 2- Etkinlik Tarihi         ║\r\n" 
-				+ "║ 3- Etkinlik Saati          ║\r\n"
-				+ "║ 4- Etkinligin Kim ile      ║\r\n" 
-				+ "║ 5- Aciklama Notu           ║\r\n"
-				+ "║ 6- Etkinlik Menusune Git   ║\r\n" 
-				+ "╚════════════════════════════╝\r\n"
+				+ "â•”â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•—\r\n" 
+				+ "â•‘ ETKINLIK DUZENLEME MENUSU  â•‘\r\n"
+				+ "â• â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•£\r\n" 
+				+ "â•‘ 1- Etkinlik Adi            â•‘\r\n"
+				+ "â•‘ 2- Etkinlik Tarihi         â•‘\r\n" 
+				+ "â•‘ 3- Etkinlik Saati          â•‘\r\n"
+				+ "â•‘ 4- Etkinligin Kim ile      â•‘\r\n" 
+				+ "â•‘ 5- Aciklama Notu           â•‘\r\n"
+				+ "â•‘ 6- Etkinlik Menusune Git   â•‘\r\n" 
+				+ "â•šâ•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�â•�\r\n"
 				+ "Lutfen yapmak istenilen islem numarasini giriniz");
 
 		int secim = scan.nextInt();
 
 		switch (secim) {
 		case 1:
-			System.out.println("Yeni etkinliğin adını girin");
+			System.out.println("Yeni etkinligin adini girin");
 			etkinlikListesi.get(secim1 - 1).etkinlikAdi = scan.nextLine();
 			etkinlikListesi.get(secim1 - 1).etkinlikAdi = scan.nextLine();
 			etkinlikDuzenlemeMenu();
 			break;
 
 		case 2:
-			System.out.println("Yeni etkinliğin tarihini girin");
+			System.out.println("Yeni etkinligin tarihini girin");
 			etkinlikListesi.get(secim1 - 1).etkinlikTarihi = scan.next();
 			etkinlikDuzenlemeMenu();
 
 			break;
 
 		case 3:
-			System.out.println("Yeni etkinliğin saatini girin");
+			System.out.println("Yeni etkinligin saatini girin");
 			etkinlikListesi.get(secim1 - 1).etkinlikSaati = scan.nextDouble();
 
 			etkinlikDuzenlemeMenu();
@@ -211,7 +212,7 @@ public class Etkinlik {
 			break;
 
 		case 4:
-			System.out.println("Yeni etkinliğin Kim ile olduğunu girin");
+			System.out.println("Yeni etkinligin Kim ile oldugunu girin");
 			etkinlikListesi.get(secim1 - 1).etkinlikKimIle = scan.nextLine();
 			etkinlikListesi.get(secim1 - 1).etkinlikKimIle = scan.nextLine();
 			etkinlikDuzenlemeMenu();
@@ -219,7 +220,7 @@ public class Etkinlik {
 			break;
 
 		case 5:
-			System.out.println("Yeni etkinliğin Açıklama notunu girin");
+			System.out.println("Yeni etkinligin Aciklama notunu girin");
 			etkinlikListesi.get(secim1 - 1).etkinlikNotu = scan.nextLine();
 			etkinlikListesi.get(secim1 - 1).etkinlikNotu = scan.nextLine();
 			etkinlikDuzenlemeMenu();
@@ -244,7 +245,7 @@ public class Etkinlik {
 	}
 
 	public String toString1() {
-		return 	" " + etkinlikTarihi + " " + etkinlikSaati + " " + etkinlikAdi + " etkiliğini yapılacaktır.";
+		return 	" " + etkinlikTarihi + " " + etkinlikSaati + " " + etkinlikAdi + " etkiligini yapilacaktir.";
 	}
 	
 }

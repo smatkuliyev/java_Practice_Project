@@ -1,11 +1,11 @@
 package _11_dateTime;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Runner {
 
+	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String islem;
@@ -43,6 +43,7 @@ public class Runner {
 			}
 			
 		}
+		 scan.close();
 		
 	}
 

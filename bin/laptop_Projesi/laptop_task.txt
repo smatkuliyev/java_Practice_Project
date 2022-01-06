@@ -35,22 +35,24 @@ calculation da
         Eger Size "Middle" iceriyorsa price 200 ekle
         Eger Size "Max" iceriyorsa price 300 ekle
         return  price olmali.
+        
      */
      DATA class
        /*
     Bu classta laptopla ilgili tum verilere sahipsiniz.
     Parametre int
     return turu ArrayList <String>
-    ArrayList'te sırayla neler var:
+    ArrayList'te sirayla neler var:
     Marka
     Model
     Ram
     CPU
     Renk
     Bu siralama her zaman aynidir, degismez.
-bu oz. sahip 9 pc olustur
+	bu oz. sahip 9 pc olustur
+
      */
-     FİYAT class
+     FIYAT class
        /*
          Parametresi int ve return tipi int
          olan GetPrice methodu veriliyor.

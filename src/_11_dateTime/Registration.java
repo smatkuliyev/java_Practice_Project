@@ -9,6 +9,7 @@ public class Registration {
 	
 	ArrayList<User> kullanicilar = new ArrayList<>();
 	
+	@SuppressWarnings("resource")
 	public List<User> register(){
 		Scanner scan = new Scanner(System.in);
 		
