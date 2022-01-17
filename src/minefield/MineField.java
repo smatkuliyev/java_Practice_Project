@@ -82,8 +82,8 @@ public class MineField {
 				board[r][c]++;
 			}
 			
-			if (board[r][r]==0) {
-				board[r][r]=-2;
+			if (board[r][c]==0) {
+				board[r][c]=-2;
 			}
 		}
 		
