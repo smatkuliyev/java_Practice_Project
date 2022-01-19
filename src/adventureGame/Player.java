@@ -35,9 +35,9 @@ public class Player {
 	
 	private int chaMenu() {
 		System.out.println("Please select character : ");
-		System.out.println("1- Samurai \t Damage : 5 \t Health : 21 \t Monay : 15");
-		System.out.println("2- Archer \t Damage : 7 \t Health : 18 \t Monay : 20");
-		System.out.println("3- Knight \t Damage : 8 \t Health : 24 \t Monay : 5");
+		System.out.println("1- Samurai \t Damage : 5 \t Health : 21 \t Money : 15");
+		System.out.println("2- Archer \t Damage : 7 \t Health : 18 \t Money : 20");
+		System.out.println("3- Knight \t Damage : 8 \t Health : 24 \t Money : 5");
 		System.out.print("Character selection : ");
 		int charId = scan.nextInt();
 		
@@ -47,6 +47,10 @@ public class Player {
 		}
 		
 		return charId;
+	}
+	
+	public int getTotalDamege() {
+		return this.getDamage()+this.getInv().getDamage();
 	}
 
 	public void initPlayer(String cNm, int dmg, int hlth, int mny) {
