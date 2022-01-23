@@ -50,11 +50,25 @@ public class Game {
 			case 2:
 				location = new Cave(player);
 				break;
+			case 3:
+				location = new Forest(player);
+				break;
+			case 4:
+				location = new River(player);
+				break;
 			case 5:
 				location = new ToolStore(player);
 				break;
 			default:
 				location = new SafeHouse(player);
+				break;
+			}
+			
+			if (location.getClass().getName().equals("SafeHouse")) {
+				if (player.getInv().isFirewood() && player.getInv().isFood() && player.getInv().isWater()) {
+					System.out.println("You have a victory!");
+					break;
+				}
 				break;
 			}
 			
