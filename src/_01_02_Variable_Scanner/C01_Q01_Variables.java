@@ -2,32 +2,32 @@ package _01_02_Variable_Scanner;
 
 public class C01_Q01_Variables {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 	/*
-		\n (or \r): starts from a new line : metni bir alt satýrdan itibaren yazdýrýr.
-        \t:  horizontal tab : metni yatayda 1 tab miktarý kaydýrýr.
-        \\: prints a back slash :\ (ters slash) yazdýrýr
-        \': prints single quote :' tek týrnak yazdýrýr.
-        \": prints double quote :" Çift týrnak yazdýrýr.
+		\n (or \r): starts from a new line : metni bir alt satï¿½rdan itibaren yazdï¿½rï¿½r.
+        \t:  horizontal tab : metni yatayda 1 tab miktarï¿½ kaydï¿½rï¿½r.
+        \\: prints a back slash :\ (ters slash) yazdï¿½rï¿½r
+        \': prints single quote :' tek tï¿½rnak yazdï¿½rï¿½r.
+        \": prints double quote :" ï¿½ift tï¿½rnak yazdï¿½rï¿½r.
 	 */
 
-		//  Soru-1 :   konsola      "Hello ", "World  \ /"        seklinde yazdýrýnýz
-		
-		System.out.println(" \"Hello \", \"World  \\ /\"");
-		
-		// Soru-2 : Pazartesi kelimesini her harfini ayrý bir satira gelecek sekilde yazdýrýnýz.
-		
-		System.out.println("p\na\nz\na\nr\nt\ne\ns\ni");
-		
-		//Soru-3 : //Soru-3 : "Java" ile hayat cok 'afilli'   yazdýrýnýz   yazdýrýnýz
-		
-		System.out.println(" \"Java\" ile hayat cok \'afilli\' \n");
-		
-		//Soru-4 : "Basari" gayrete
-		// 'asiktir'  yazdýrýnýz sonraki "TechProEd ile java cok kolay ..." ifadesi  3 satýr sonra ve satýr basýndan 1 tab ileride yazýlsýn.
-		
-		System.out.println(" \"Basari\" gayrete \n \'asiktir\' \n\n\n \t \"Techpro ile java cok kolay...\" ");
-		
-	}
+        //  Soru-1 :   konsola      "Hello ", "World  \ /"        seklinde yazdï¿½rï¿½nï¿½z
+
+        System.out.println(" \"Hello \", \"World  \\ /\"");
+
+        // Soru-2 : Pazartesi kelimesini her harfini ayrï¿½ bir satira gelecek sekilde yazdï¿½rï¿½nï¿½z.
+
+        System.out.println("p\na\nz\na\nr\nt\ne\ns\ni");
+
+        //Soru-3 : //Soru-3 : "Java" ile hayat cok 'afilli'   yazdï¿½rï¿½nï¿½z   yazdï¿½rï¿½nï¿½z
+
+        System.out.println(" \"Java\" ile hayat cok \'afilli\' \n");
+
+        //Soru-4 : "Basari" gayrete
+        // 'asiktir'  yazdï¿½rï¿½nï¿½z sonraki "TechProEd ile java cok kolay ..." ifadesi  3 satï¿½r sonra ve satï¿½r basï¿½ndan 1 tab ileride yazï¿½lsï¿½n.
+
+        System.out.println(" \"Basari\" gayrete \n \'asiktir\' \n\n\n \t \"Techpro ile java cok kolay...\" ");
+
+    }
 
 }

@@ -6,14 +6,14 @@ public class Q11 {
 		Asagidaki String degiskenini kullanarak  konsolda A L i yazdiriniz.
 		String  pickName = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		 */
-    	String  pickName = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    	
-    	char A = pickName.charAt(pickName.indexOf("A"));
-    	char L = pickName.charAt(pickName.indexOf("L"));
-    	char i = pickName.charAt(pickName.indexOf("I"));
-    	
-    	System.out.println("ALi : " +A + " " + L +" "+ i);
-       
+        String pickName = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        char A = pickName.charAt(pickName.indexOf("A"));
+        char L = pickName.charAt(pickName.indexOf("L"));
+        char i = pickName.charAt(pickName.indexOf("I"));
+
+        System.out.println("ALi : " + A + " " + L + " " + i);
+
     }
 
 }

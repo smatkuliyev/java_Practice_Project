@@ -46,7 +46,7 @@ public class Ex02 {
 
         arrayListFark1.removeAll(arrayList2); //1 in 2 den farki
         System.out.println("arrListFark1 = " + arrayListFark1);
-                arrayListFark2.removeAll(arrayList1); //2nin 1 den farki
+        arrayListFark2.removeAll(arrayList1); //2nin 1 den farki
         System.out.println("arrListFark2 = " + arrayListFark2);
 
         //     arrayListFark1.addAll(arrayListFark2); // Farklarin birleşimi

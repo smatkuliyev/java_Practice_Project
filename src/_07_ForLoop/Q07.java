@@ -30,23 +30,23 @@ public class Q07 {
 
     public static void main(String[] args) {
 
-    		Scanner scan= new Scanner(System.in);
-    		System.out.print("carpim tablosunun boyutunu giriniz : ");
-    		int boyut = scan.nextInt();
-    		
-        	for (int baba = 1; baba <= boyut; baba++) {
-    			for (int evlat = 1; evlat <= boyut; evlat++) {
-    				if(baba == evlat) {
-    					System.out.print("1" + " ");
-    				} else {
-    					System.out.print("0" + " ");
-    				}
-    				
-    			}
-    			System.out.println();
-    		}
-    		
-    		
-    		scan.close();
+        Scanner scan = new Scanner(System.in);
+        System.out.print("carpim tablosunun boyutunu giriniz : ");
+        int boyut = scan.nextInt();
+
+        for (int baba = 1; baba <= boyut; baba++) {
+            for (int evlat = 1; evlat <= boyut; evlat++) {
+                if (baba == evlat) {
+                    System.out.print("1" + " ");
+                } else {
+                    System.out.print("0" + " ");
+                }
+
+            }
+            System.out.println();
+        }
+
+
+        scan.close();
     }
 }

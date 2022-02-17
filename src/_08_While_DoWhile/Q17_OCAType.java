@@ -3,32 +3,32 @@ package _08_While_DoWhile;
 public class Q17_OCAType {
 	
 	/*
-	aþaðýdaki kod bloðunun çýktýsý ne olur?
+	aï¿½aï¿½ï¿½daki kod bloï¿½unun ï¿½ï¿½ktï¿½sï¿½ ne olur?
 	 */
 
-	public static void main(String[] args) {
-	
-		int i = 3;
+    public static void main(String[] args) {
+
+        int i = 3;
         while (i < 6) {
             System.out.println(i);
             i += 1;
         }
-        
-    //	 A) 3
-	//      4
-	//      5
-	//      6
 
-    //	B)  3		cevap B)
-	//      4
-	//      5
+        //	 A) 3
+        //      4
+        //      5
+        //      6
 
-	//	 C) 1
-	//      2
-	//      3
-	//      4
-	//      5
+        //	B)  3		cevap B)
+        //      4
+        //      5
 
-	}
+        //	 C) 1
+        //      2
+        //      3
+        //      4
+        //      5
+
+    }
 
 }

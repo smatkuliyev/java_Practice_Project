@@ -1,10 +1,10 @@
 package adventureGame;
 
-public class Zombi extends Obstacle{
+public class Zombi extends Obstacle {
 
-	public Zombi() {
-		super("Zombi", 3, 10, 4, 3);
-		
-	}
+    public Zombi() {
+        super("Zombi", 3, 10, 4, 3);
+
+    }
 
 }

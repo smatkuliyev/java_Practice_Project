@@ -1,8 +1,8 @@
 package workerAndCompany;
+
 import java.util.*;
 
 public class Company {
-
 
 
     List<String> sirketler = new ArrayList<>(Arrays.asList("Bordo", "Mavi", "Kirmizi"));
@@ -44,7 +44,7 @@ public class Company {
     }
 
 
-     void departmanSec(Worker worker) {
+    void departmanSec(Worker worker) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Departman Seciniz : ");
 
@@ -76,7 +76,7 @@ public class Company {
                 break;
             default:
                 System.out.println("Baska bir rakam seciniz : ");
-               break;
+                break;
 
         }
 

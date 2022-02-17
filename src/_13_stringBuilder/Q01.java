@@ -13,23 +13,23 @@ public class Q01 {
 	        It is not a palindrome"
 
 		 */
-    	Scanner scan = new Scanner(System.in);
-    	System.out.println("bir metin girin : ");
-    	
-    	String metin = scan.nextLine();    	
-    	StringBuilder sb = new StringBuilder(metin);
-    //	StringBuilder sb = new StringBuilder(scan.nextLine());
-    //	sb.append(metin);
-    	
-    	String tersMetin = sb.reverse().toString();
-    	
-    	if (tersMetin.equalsIgnoreCase(metin)) {
-			System.out.println("girilen metin polindrome : " + tersMetin);
-		} else {
-			System.out.println("girilen metin polindrome degildir: " + tersMetin);
-		}
-     	
-    	scan.close();
+        Scanner scan = new Scanner(System.in);
+        System.out.println("bir metin girin : ");
+
+        String metin = scan.nextLine();
+        StringBuilder sb = new StringBuilder(metin);
+        //	StringBuilder sb = new StringBuilder(scan.nextLine());
+        //	sb.append(metin);
+
+        String tersMetin = sb.reverse().toString();
+
+        if (tersMetin.equalsIgnoreCase(metin)) {
+            System.out.println("girilen metin polindrome : " + tersMetin);
+        } else {
+            System.out.println("girilen metin polindrome degildir: " + tersMetin);
+        }
+
+        scan.close();
     }
 
 }

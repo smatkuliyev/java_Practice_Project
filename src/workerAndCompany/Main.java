@@ -1,4 +1,5 @@
 package workerAndCompany;
+
 import java.util.Scanner;
 import java.util.concurrent.ConcurrentMap;
 
@@ -12,17 +13,16 @@ public class Main {
 
 
         menuGoster();
-       worker.kullaniciKayit();
-       company.sirketDondur(worker);
-       worker.mailOlustur();
-       worker.generateRandomPassword();
-       System.out.println("Mail Adresiniz : " + worker.geteMail());
-       System.out.println("Gecici Å�ifreniz : " + worker.getSifre());
-       worker.objeOlustur();
-       worker.mailGiris();
-       worker.sifreKontrol();
+        worker.kullaniciKayit();
+        company.sirketDondur(worker);
+        worker.mailOlustur();
+        worker.generateRandomPassword();
+        System.out.println("Mail Adresiniz : " + worker.geteMail());
+        System.out.println("Gecici Å�ifreniz : " + worker.getSifre());
+        worker.objeOlustur();
+        worker.mailGiris();
+        worker.sifreKontrol();
         worker.yeniSifreOlustur();
-     
 
 
     }

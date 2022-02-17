@@ -8,7 +8,7 @@ import java.time.format.FormatStyle;
 public class Q05 {
 
     @SuppressWarnings("static-access")
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
        /*
          What is the output of the following code?
@@ -35,7 +35,7 @@ public class Q05 {
             
             Cevap B,
             
-            period'da enson method öncekiyi siler
+            period'da enson method ï¿½ncekiyi siler
 */
 
     }

@@ -4,35 +4,34 @@ import java.util.Scanner;
 
 public class C02_Q09 {
 
-	public static void main(String[] args) {
-    /*  Problem Tanýmý
-        Kullanýcýdan a,b ve c sayýlarýný okuyarak aþaðýdaki iþlemi yapan kodu yazýnýz
-        a'nýn karesinden b'nin karesini cikarip c nin 3 katina bolunuz nin karesi
-        Örnek Ekran Çýktýsý
-        a sayýsýný giriniz: 5
-        b sayýsýný giriniz: 3
-        c sayýsýný giriniz: 1
-        sonuç : 5.333333333333333        */
-		
-		
-		Scanner scan = new Scanner(System.in);
-		
-		System.out.print("Ilk sayiyi giriniz : ");
-		double sayi1 = scan.nextDouble();
-		
-		System.out.print("2. sayiyi giriniz : ");
-		double sayi2 = scan.nextDouble();
-		
-		System.out.print("3. sayiyi giriniz : ");
-		double sayi3 = scan.nextDouble();
-		
-		double sonuc = ( Math.pow(sayi1, 2) - Math.pow(sayi2, 2) ) / (sayi3 * 3);
-		
-		System.out.println("Sonuc : " + sonuc);
-		
-		
-		
-		scan.close();
-	}
+    public static void main(String[] args) {
+    /*  Problem Tanï¿½mï¿½
+        Kullanï¿½cï¿½dan a,b ve c sayï¿½larï¿½nï¿½ okuyarak aï¿½aï¿½ï¿½daki iï¿½lemi yapan kodu yazï¿½nï¿½z
+        a'nï¿½n karesinden b'nin karesini cikarip c nin 3 katina bolunuz nin karesi
+        ï¿½rnek Ekran ï¿½ï¿½ktï¿½sï¿½
+        a sayï¿½sï¿½nï¿½ giriniz: 5
+        b sayï¿½sï¿½nï¿½ giriniz: 3
+        c sayï¿½sï¿½nï¿½ giriniz: 1
+        sonuï¿½ : 5.333333333333333        */
+
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Ilk sayiyi giriniz : ");
+        double sayi1 = scan.nextDouble();
+
+        System.out.print("2. sayiyi giriniz : ");
+        double sayi2 = scan.nextDouble();
+
+        System.out.print("3. sayiyi giriniz : ");
+        double sayi3 = scan.nextDouble();
+
+        double sonuc = (Math.pow(sayi1, 2) - Math.pow(sayi2, 2)) / (sayi3 * 3);
+
+        System.out.println("Sonuc : " + sonuc);
+
+
+        scan.close();
+    }
 
 }

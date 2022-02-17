@@ -13,23 +13,23 @@ public class Q04 {
          * x.yz   ==   false
          * xyaz   ==   false
          */
-    	Scanner scan = new Scanner(System.in);
-    	System.out.print("Bir string giriniz : ");
-    	String girilen = scan.nextLine();
-    	
-    	boolean kk = kontrol(girilen);
-    	
-    	System.out.println(kk);
-    	
-    	scan.close();
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Bir string giriniz : ");
+        String girilen = scan.nextLine();
+
+        boolean kk = kontrol(girilen);
+
+        System.out.println(kk);
+
+        scan.close();
     }
 
-	private static boolean kontrol(String girilen) {
-		boolean ktrl = false;
-		if (girilen.contains("xyz")) {
-			ktrl = true;
-		} 
-		
-		return ktrl;	
-	}
+    private static boolean kontrol(String girilen) {
+        boolean ktrl = false;
+        if (girilen.contains("xyz")) {
+            ktrl = true;
+        }
+
+        return ktrl;
+    }
 }

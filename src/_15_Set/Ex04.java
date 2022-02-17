@@ -22,17 +22,17 @@ public class Ex04 {
         System.out.println("Isim giriniz :");
         String isim = scan.nextLine();
 
-       
-            if (ll.remove(isim)) {
-               
-                System.out.println("bu isim Linked da vardi ve silindi :" + ll);
-                
-            } else {
 
-                System.out.println("Bu isim linked listte yoktu silinemedi :" + ll);
-            }
-            scan.close();
-        
+        if (ll.remove(isim)) {
+
+            System.out.println("bu isim Linked da vardi ve silindi :" + ll);
+
+        } else {
+
+            System.out.println("Bu isim linked listte yoktu silinemedi :" + ll);
+        }
+        scan.close();
+
     }
 }
 

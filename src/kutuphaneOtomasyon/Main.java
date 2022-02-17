@@ -7,11 +7,11 @@ public class Main {
     static KitapIslemleri kitapislemleri = new KitapIslemleri();
 
     public static void main(String[] args) {
-       acilisMenu();
+        acilisMenu();
     }
 
     @SuppressWarnings("resource")
-	public static void acilisMenu(){
+    public static void acilisMenu() {
         Scanner input = new Scanner(System.in);
 
         Scanner scan = new Scanner(System.in);
@@ -24,30 +24,30 @@ public class Main {
         System.out.println("5-cikis yap");
         int tercih = scan.nextInt();
 
-        switch (tercih){
+        switch (tercih) {
             case 1:
                 //kitap ekle
                 System.out.print("Kitap ismini giriniz ");
-                String kitapAdi=input.nextLine();
+                String kitapAdi = input.nextLine();
                 System.out.print("Kitap ISBN no giriniz ");
                 String kitapIsbn = input.nextLine();
                 System.out.print("Kitap aciklamasini giriniz ");
-                String kitapAciklama =input.nextLine();
+                String kitapAciklama = input.nextLine();
                 //yazar bilgileri
                 System.out.print("Yazar ismini giriniz ");
-                String yazarAdi=input.nextLine();
+                String yazarAdi = input.nextLine();
                 System.out.print("Yazar yasini giriniz ");
-                int yas =input.nextInt();
+                int yas = input.nextInt();
                 input.nextLine();
                 System.out.print("Yazar memleketini giriniz ");
                 String yazarMemleketi = input.nextLine();
                 // yazarin bilgileri
-                Yazar yazar = new Yazar(yazarAdi,yas,yazarMemleketi);
+                Yazar yazar = new Yazar(yazarAdi, yas, yazarMemleketi);
                 //yayinevi bilgileri
                 System.out.print("Yayinevi ismini giriniz ");
-                String yayineviAdi=input.nextLine();
+                String yayineviAdi = input.nextLine();
                 System.out.print("Yayinevi adresini giriniz ");
-                String yayineviAdresi=input.nextLine();
+                String yayineviAdresi = input.nextLine();
 
                 /*String kitapBilgileri = kitapAdi+"-l-"+kitapIsbn+"-l-"+kitapAciklama+"-l-"+yazarAdi+"-l-"+yas+"-l-"+yazarMemleketi+"-l-"+yayineviAdi+"-l-"+yayineviAdresi;
                 String ktp[]= kitapBilgileri.split("-l-");
@@ -68,8 +68,8 @@ public class Main {
                 }
                 System.out.println(kitapMap.containsKey("123"));
 				*/
-                Yayinevi yayinevi = new Yayinevi(yayineviAdi,yayineviAdresi);
-                Kitap kitap = new Kitap(kitapAdi,kitapIsbn,kitapAciklama,yazar,yayinevi);
+                Yayinevi yayinevi = new Yayinevi(yayineviAdi, yayineviAdresi);
+                Kitap kitap = new Kitap(kitapAdi, kitapIsbn, kitapAciklama, yazar, yayinevi);
                 kitapislemleri.kitapEkle(kitap);
                 kitapislemleri.tumKitaplariGoster();
                 acilisMenu();

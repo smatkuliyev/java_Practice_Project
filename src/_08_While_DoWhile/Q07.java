@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class Q07 {
 
-	public static void main(String[] args) {
-		// Kullanýcýda x  girilene kadar ekrana "Program çalýþýyor" yazan
-        // ve x girildiðinde ise "Program bitti" yazan programý yazýnýz.		
-		
-		Scanner scan = new Scanner(System.in);		
-		String str = ""; 
-		
-		do {
-			System.out.print("Lutfen x girin yoksa bu program calismaya devam eder : ");
-			str = scan.next(); 			
-			
-		} while (!str.equals("x"));
-		
-		System.out.println("Program bitti.");
-		scan.close();
-	}
+    public static void main(String[] args) {
+        // Kullanï¿½cï¿½da x  girilene kadar ekrana "Program ï¿½alï¿½ï¿½ï¿½yor" yazan
+        // ve x girildiï¿½inde ise "Program bitti" yazan programï¿½ yazï¿½nï¿½z.		
+
+        Scanner scan = new Scanner(System.in);
+        String str = "";
+
+        do {
+            System.out.print("Lutfen x girin yoksa bu program calismaya devam eder : ");
+            str = scan.next();
+
+        } while (!str.equals("x"));
+
+        System.out.println("Program bitti.");
+        scan.close();
+    }
 }

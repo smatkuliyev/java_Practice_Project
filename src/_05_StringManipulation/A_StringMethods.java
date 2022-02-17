@@ -3,8 +3,8 @@ package _05_StringManipulation;
 import java.util.Locale;
 
 public class A_StringMethods {
-    @SuppressWarnings({ "unused", "null" })
-	public static void main(String[] args) {
+    @SuppressWarnings({"unused", "null"})
+    public static void main(String[] args) {
 
 
         /** indexOf()
@@ -60,11 +60,11 @@ public class A_StringMethods {
          * Metin icinde, istenilen araliktaki bir parcasina ya da butunune ulasilabilir. Sonuc ise String dir.
          */
 
-        String ss= "Her ders Java gibi olsa";
+        String ss = "Her ders Java gibi olsa";
 
 
         System.out.println(ss.substring(10)); //ava gibi olsa: 10.index dahil(inclusive) sonuna kadar tum String
-        System.out.println(ss.substring(ss.length()-10)); // gibi olsa: son 10 harfi yazdirin
+        System.out.println(ss.substring(ss.length() - 10)); // gibi olsa: son 10 harfi yazdirin
 
         // ilk 10 karakteri alma
         System.out.println(ss.substring(0, 10));//Her ders J: substring(0, 10) yazildiginda
@@ -83,7 +83,7 @@ public class A_StringMethods {
 
         // ss'in ilk 10 karakteri * ile gizleyin, geriye kalanlar normal yazilsin
 
-        System.out.println(ss.replaceAll("\\w", "*")+ss.substring(10)); //**********ava gibi olsa
+        System.out.println(ss.replaceAll("\\w", "*") + ss.substring(10)); //**********ava gibi olsa
         System.out.println("----------");
 
         /**trim()
@@ -110,7 +110,7 @@ public class A_StringMethods {
         System.out.println("----------");
 
         /** ReplaceFirst
-        * Replace ile ayni sadece ilk bulunani degistirir
+         * Replace ile ayni sadece ilk bulunani degistirir
          */
         String txt = "Merhaba Dunya";
 
@@ -176,23 +176,23 @@ public class A_StringMethods {
         System.out.println("metin Ba ile basliyor mu? >>>> " + ad.startsWith("Ba")); //true
         System.out.println("metin -dir ile bitiyor mu? >>>> " + ad.endsWith("dir")); //true
         System.out.println("----------");
-    /**
-    * StringConcat
-    * bir stringe digerini ekler
-     * Concatenation : Java'da + islemi yapilirken eger toplanan ifadelerden biri veya
-     * her ikisi String ise Java toplama degil BIRLESTIRME yapar
-     * */
-     	    System.out.println( 15 + 20 + "Merhaba"); //35Merhaba
-     		System.out.println("Merhaba" + 15 + 20);  // Merhaba1520
-     		System.out.println("Merhaba" + ( 15 + 20 )); // Merhaba35
-      		System.out.println("Merhaba" + 15 * 20 ); // Merhaba300
+        /**
+         * StringConcat
+         * bir stringe digerini ekler
+         * Concatenation : Java'da + islemi yapilirken eger toplanan ifadelerden biri veya
+         * her ikisi String ise Java toplama degil BIRLESTIRME yapar
+         * */
+        System.out.println(15 + 20 + "Merhaba"); //35Merhaba
+        System.out.println("Merhaba" + 15 + 20);  // Merhaba1520
+        System.out.println("Merhaba" + (15 + 20)); // Merhaba35
+        System.out.println("Merhaba" + 15 * 20); // Merhaba300
 
         String s = "Hi";
-        System.out.println(s+" " +"there!");// Hi there!
+        System.out.println(s + " " + "there!");// Hi there!
         System.out.println(s + " there!"); // Hi there!
         System.out.println(s.concat("there!")); // Hithere!
         System.out.println(s.concat(" there!")); // Hi there!
-        System.out.println(s.concat(" " +"there!")); // Hi there!
+        System.out.println(s.concat(" " + "there!")); // Hi there!
 
         String s2 = " everybody";
         System.out.println(s.concat(s2)); // Hi everybody
@@ -229,7 +229,7 @@ public class A_StringMethods {
 
         // str4'i buyuk harfe cevirmek istersek
 
-        str4=str4.toUpperCase(); // bu satirdan sonra kalici olarak str BUYUK harlerden olusan bir String oldu
+        str4 = str4.toUpperCase(); // bu satirdan sonra kalici olarak str BUYUK harlerden olusan bir String oldu
 
         System.out.println(str4);  //TECHPROEDUCATİON
         System.out.println(str4.toLowerCase()); //techproeducation
@@ -240,9 +240,9 @@ public class A_StringMethods {
         /**Equals() methodu ve Cift Esittir (==) Farki
          */
         String sA = "Haluk Bilgin";
-        String sB = sA + "" ; // Haluk Bilgin
+        String sB = sA + ""; // Haluk Bilgin
 
-        System.out.println(sA==sB);// false
+        System.out.println(sA == sB);// false
         // == Stringlerin hem degerlerine hem de adreslerine bakar
         // bu ornekte sA+"" yazdigimizda concatenation yapildigi icin Java yeni bir obje
         // olusturur ve islemin sonucunu yeni obje'nin icine koyar.
@@ -255,8 +255,8 @@ public class A_StringMethods {
         // equals() methodu sadece String'lerin degerlerini karsilastirir
         // bu ornekte sA ile sB nin degerleri AYNI oldugu icin true dondurur
 
-        String sC= sA;
-        System.out.println(sC==sA); //true
+        String sC = sA;
+        System.out.println(sC == sA); //true
         System.out.println(sA.equals(sC)); //true
         System.out.println("----------");
         /**
@@ -267,10 +267,10 @@ public class A_StringMethods {
         String cumle = "Bu gun hava yagmurlu";
         System.out.println("uzunluk = " + cumle.length()); //uzunluk = 20
 
-        String st1="";
+        String st1 = "";
         System.out.println(st1.length()); // 0
 
-        String s3=null; // null hic demek
+        String s3 = null; // null hic demek
         // normalde String'ler "" icine yazilir ama null icin buna gerek yoktur
         // null case sensitive'dir , dolayisiyla NULL veya Null yazilmaz
         // null bir deger degildir, sadece hicligi gosteren bir pointer'dir

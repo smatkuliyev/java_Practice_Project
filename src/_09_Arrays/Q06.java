@@ -10,21 +10,21 @@ public class Q06 {
 	(Dizideki en buyukk ikinci sayyiyi, maksimum ve minimum sayiyi
 	bulmak icin bir java programi yazin)	
 	*/
-    	
-    	int[] arr = { 100, 10001, -90, 845, 8787, 898, 0, 1, -90 };
-    	
-    	Arrays.sort(arr);
-    	System.out.println(Arrays.toString(arr));
-    	
-    	int ekSayi = arr[0];
-    	int ebSayi = arr[arr.length-1];
-    	int eb2Sayi = arr[arr.length-2];
-    	
-    	System.out.println(ekSayi);
-    	System.out.println(eb2Sayi);
-    	System.out.println(ebSayi);
-    	
-    	
+
+        int[] arr = {100, 10001, -90, 845, 8787, 898, 0, 1, -90};
+
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
+
+        int ekSayi = arr[0];
+        int ebSayi = arr[arr.length - 1];
+        int eb2Sayi = arr[arr.length - 2];
+
+        System.out.println(ekSayi);
+        System.out.println(eb2Sayi);
+        System.out.println(ebSayi);
+
+
     }
 
 }

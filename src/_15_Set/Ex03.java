@@ -23,7 +23,7 @@ public class Ex03 {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> arrayList1 =arrListHazirla(30, 0, 10);//1.adım method call
+        ArrayList<Integer> arrayList1 = arrListHazirla(30, 0, 10);//1.adım method call
         System.out.println("arrayList1 = " + arrayList1);//2.adım
 
         System.out.println("*********************************");
@@ -57,21 +57,24 @@ public class Ex03 {
         }
         return arrList;
     }
-//3.Adım method
+
+    //3.Adım method
     public static Set<Integer> tekrarlariSil(ArrayList<Integer> arrList2) {
 
         Set<Integer> tekraredenler = new HashSet<>(arrList2);//arraylşst elemanlarını hashsete attık
 
         return tekraredenler;
     }
-//5.Adım method
+
+    //5.Adım method
     public static Set<Integer> SeteCevir(ArrayList<Integer> arrayList) {
 
         Set<Integer> set = new HashSet<>(arrayList);
 
         return set;
     }
-//6.Adım method
+
+    //6.Adım method
     public static ArrayList<Integer> ListeCevir(Set<Integer> set) {
 
         ArrayList<Integer> list = new ArrayList<>(set);

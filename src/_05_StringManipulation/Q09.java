@@ -13,17 +13,17 @@ public class Q09 {
 		     	INPUT      :  Python
 				OUTPUT :   Pyt
 	    */
-    	
-    	Scanner scan = new Scanner(System.in);
-    	System.out.print("bir kelime giriniz : ");
-    	String cift = scan.next();
 
-    	
-    	if (cift.length()%2 == 0) {
-    		System.out.println("Girilen kelimenin ilk  yarisi : " + cift.substring(0, cift.length()/2));
-		} else {
-			System.out.println("Girilen string cift uzunlukta degildir");
-		}
-    	scan.close();
+        Scanner scan = new Scanner(System.in);
+        System.out.print("bir kelime giriniz : ");
+        String cift = scan.next();
+
+
+        if (cift.length() % 2 == 0) {
+            System.out.println("Girilen kelimenin ilk  yarisi : " + cift.substring(0, cift.length() / 2));
+        } else {
+            System.out.println("Girilen string cift uzunlukta degildir");
+        }
+        scan.close();
     }
 }

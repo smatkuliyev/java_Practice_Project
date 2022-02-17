@@ -1,4 +1,5 @@
 package workerAndCompany;
+
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,43 +9,45 @@ import java.util.regex.Pattern;
 
 public class Worker {
 
-private String isim;
-private String soyisim;
-private String id;
-private String sirketAdi;
-private String departman;
-private String eMail;
+    private String isim;
+    private String soyisim;
+    private String id;
+    private String sirketAdi;
+    private String departman;
+    private String eMail;
 
-Company company=new Company();
+    Company company = new Company();
 
 
     private String sifre;
 
-    List<Worker> kullaniciList=new ArrayList<>();
-    Main main=new Main();
+    List<Worker> kullaniciList = new ArrayList<>();
+    Main main = new Main();
 
 
-    void kullaniciKayit(){
-        Scanner scan=new Scanner(System.in);
+    void kullaniciKayit() {
+        Scanner scan = new Scanner(System.in);
         System.out.println("Adinizi giriniz : ");
-        isim=scan.nextLine();
+        isim = scan.nextLine();
         System.out.println("Soyadinizi giriniz : ");
-        soyisim=scan.nextLine();
+        soyisim = scan.nextLine();
         System.out.println("TC giriniz : ");
-        id=scan.nextLine();
-      
-    }
-void objeOlustur() {
-	Data data=new Data();
-	for (int i = 0; i < data.isimler.size(); i++) {
-		Worker worker=new Worker(data.isimler.get(i), data.Soyisimler.get(i), data.idler.get(i), data.sirketler.get(i), data.departmanlar.get(i), 
-				data.isimler.get(i).toLowerCase() +"."+ data.Soyisimler.get(i).toLowerCase() +"@"+data.sirketler.get(i).toLowerCase()+".com");
-		kullaniciList.add(worker);
-	}
-}
-public Worker(){
+        id = scan.nextLine();
 
-}
+    }
+
+    void objeOlustur() {
+        Data data = new Data();
+        for (int i = 0; i < data.isimler.size(); i++) {
+            Worker worker = new Worker(data.isimler.get(i), data.Soyisimler.get(i), data.idler.get(i), data.sirketler.get(i), data.departmanlar.get(i),
+                    data.isimler.get(i).toLowerCase() + "." + data.Soyisimler.get(i).toLowerCase() + "@" + data.sirketler.get(i).toLowerCase() + ".com");
+            kullaniciList.add(worker);
+        }
+    }
+
+    public Worker() {
+
+    }
 
     public String getIsim() {
         return isim;
@@ -106,65 +109,66 @@ public Worker(){
     public Worker(String isim, String soyisim, String id, String sirketAdi, String departman, String eMail) {
         this.isim = isim;
         this.soyisim = soyisim;
-        this.id=id;
-        this.sirketAdi=sirketAdi;
-        this.departman=departman;
-        this.eMail=eMail;
+        this.id = id;
+        this.sirketAdi = sirketAdi;
+        this.departman = departman;
+        this.eMail = eMail;
     }
 
 
-    void mailOlustur(){
-        eMail=isim.toLowerCase()+"."+soyisim.toLowerCase()+"@"+getSirketAdi().toLowerCase()+".com";
+    void mailOlustur() {
+        eMail = isim.toLowerCase() + "." + soyisim.toLowerCase() + "@" + getSirketAdi().toLowerCase() + ".com";
     }
-    void kullaniciGiris(){
+
+    void kullaniciGiris() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Mail adresinizi giriniz : ");
-        String mail=scan.nextLine();
-        int count=3;
-        while (!mail.equals(eMail) & count>0){
+        String mail = scan.nextLine();
+        int count = 3;
+        while (!mail.equals(eMail) & count > 0) {
             System.out.println("Yanlis girdiniz tekrar deneyiniz. Kalan hakkiniz : " + count);
             count--;
         }
-        if (count==0){
+        if (count == 0) {
             System.out.println("3 Defa hatali giris yaptiniz. Cikisiniz gerceklestirilmistir.");
             main.menuGoster();
         }
 
         System.out.println("Å�ifrenizi adresinizi giriniz : ");
-        String yeniSifre=scan.nextLine();
-        int count2=3;
-        while (!sifre.equals(yeniSifre) & count2>0){
+        String yeniSifre = scan.nextLine();
+        int count2 = 3;
+        while (!sifre.equals(yeniSifre) & count2 > 0) {
             System.out.println("Yanlis girdiniz tekrar deneyiniz. Kalan hakkiniz : " + count);
             count--;
         }
-        if (count==0){
+        if (count == 0) {
             System.out.println("3 Defa hatali giris yaptiniz. Cikisiniz gerceklestirilmistir.");
             main.menuGoster();
         }
     }
-    public boolean isValidPassword(String password)
-    {
-  
+
+    public boolean isValidPassword(String password) {
+
         // for checking if password length
         // is between 8 and 15
         if (!((password.length() >= 4)
-              && (password.length() <= 8))) {
+                && (password.length() <= 8))) {
             return false;
         }
-  
+
         // to check space
         if (password.contains(" ")) {
             return false;
         }
         if (true) {
             int count = 0;
-  
+
             // check digits from 0 to 9
             for (int i = 0; i <= 9; i++) {
-  
+
                 // to convert int to string
                 String str1 = Integer.toString(i);
-  
+
                 if (password.contains(str1)) {
                     count = 1;
                 }
@@ -173,31 +177,31 @@ public Worker(){
                 return false;
             }
         }
-  
+
         // for special characters
         if (!(password.contains("@") || password.contains("#")
-              || password.contains("!") || password.contains("~")
-              || password.contains("$") || password.contains("%")
-              || password.contains("^") || password.contains("&")
-              || password.contains("*") || password.contains("(")
-              || password.contains(")") || password.contains("-")
-              || password.contains("+") || password.contains("/")
-              || password.contains(":") || password.contains(".")
-              || password.contains(", ") || password.contains("<")
-              || password.contains(">") || password.contains("?")
-              || password.contains("|"))) {
+                || password.contains("!") || password.contains("~")
+                || password.contains("$") || password.contains("%")
+                || password.contains("^") || password.contains("&")
+                || password.contains("*") || password.contains("(")
+                || password.contains(")") || password.contains("-")
+                || password.contains("+") || password.contains("/")
+                || password.contains(":") || password.contains(".")
+                || password.contains(", ") || password.contains("<")
+                || password.contains(">") || password.contains("?")
+                || password.contains("|"))) {
             return false;
         }
-  
+
         if (true) {
             int count = 0;
-  
+
             // checking capital letters
             for (int i = 65; i <= 90; i++) {
-  
+
                 // type casting
-                char c = (char)i;
-  
+                char c = (char) i;
+
                 String str1 = Character.toString(c);
                 if (password.contains(str1)) {
                     count = 1;
@@ -207,17 +211,17 @@ public Worker(){
                 return false;
             }
         }
-  
+
         if (true) {
             int count = 0;
-  
+
             // checking small letters
             for (int i = 90; i <= 122; i++) {
-  
+
                 // type casting
-                char c = (char)i;
+                char c = (char) i;
                 String str1 = Character.toString(c);
-  
+
                 if (password.contains(str1)) {
                     count = 1;
                 }
@@ -226,74 +230,77 @@ public Worker(){
                 return false;
             }
         }
-  
+
         // if all conditions fails
         return true;
     }
 
-    void yeniSifreOlustur(){
+    void yeniSifreOlustur() {
 
-        Scanner scan=new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Lutfen en az bir buyuk harf, en az bir kucuk harf,en az bir rakam ve en az bir ozel karakter olmak uzere minimum 4 maximum 8 karakterden olusacan yeni sifrenizi giriniz. ");
-        String yeniSifre=scan.nextLine();
+        String yeniSifre = scan.nextLine();
 //        boolean a=yeniSifre.contains("[A-Z]");
-        if (isValidPassword(yeniSifre)){
-        	System.out.println("Å�ifreniz basarili bir sekilde degistirilmistir. ");
-        	sifre=yeniSifre;
-        	bilgileriGoster();
-        }else{
+        if (isValidPassword(yeniSifre)) {
+            System.out.println("Å�ifreniz basarili bir sekilde degistirilmistir. ");
+            sifre = yeniSifre;
+            bilgileriGoster();
+        } else {
             System.out.println("Eksik ya da yanlis karakter girdiniz ");
             yeniSifreOlustur();
         }
 
     }
-void bilgileriGoster() {
-      System.out.println("Mail adresiniz : " + eMail+"\nCalistiginiz Sirket : "+sirketAdi+
-    		  "\nDepartmaniniz : "+ departman);
-      System.out.println("Ayni Sirket ve Departmandaki kisiler : ");
-      for (int i = 0; i < kullaniciList.size(); i++) {
-    	  if(departman.contains(kullaniciList.get(i).departman)) {
-        	  System.out.println(kullaniciList.get(i).toString());
-        	  
-          }	
-  	}
-//      System.out.println(kullaniciList.toString());
-      
-}
-    void generateRandomPassword()
-        {
-            int len = 6;
-            int randNumOrigin = 48, randNumBound = 122;
-            SecureRandom random = new SecureRandom();
-            sifre=random.ints(randNumOrigin, randNumBound + 1)
-                    .filter(i -> Character.isAlphabetic(i) || Character.isDigit(i))
-                    .limit(len)
-                    .collect(StringBuilder::new, StringBuilder::appendCodePoint,
-                            StringBuilder::append)
-                    .toString();
-        }
-            int count3 = 3;
 
-        void mailGiris() {
-            Scanner scan = new Scanner(System.in);
-            System.out.println("Sistem tarafindan uretilen mail adresinizi giriniz : ");
-            String mailKontrol = scan.nextLine();
+    void bilgileriGoster() {
+        System.out.println("Mail adresiniz : " + eMail + "\nCalistiginiz Sirket : " + sirketAdi +
+                "\nDepartmaniniz : " + departman);
+        System.out.println("Ayni Sirket ve Departmandaki kisiler : ");
+        for (int i = 0; i < kullaniciList.size(); i++) {
+            if (departman.contains(kullaniciList.get(i).departman)) {
+                System.out.println(kullaniciList.get(i).toString());
 
-            if (!mailKontrol.equals(eMail)) {
-                count3--;
-                if (count3 == 0) {
-                   System.out.println("3 defa hatali giris yaptiniz. Cikisiniz gerceklestirilnistir.");
-                }
-                else{
-                    System.out.println("Yanlis girdiniz tekrar deneyiniz. Kalan hakkiniz : " + count3);
-                    mailGiris();
-                }
-
-            } else {
-                System.out.println("Mail adresiniz eslesmistir.");
             }
         }
-    int count4=3;
+//      System.out.println(kullaniciList.toString());
+
+    }
+
+    void generateRandomPassword() {
+        int len = 6;
+        int randNumOrigin = 48, randNumBound = 122;
+        SecureRandom random = new SecureRandom();
+        sifre = random.ints(randNumOrigin, randNumBound + 1)
+                .filter(i -> Character.isAlphabetic(i) || Character.isDigit(i))
+                .limit(len)
+                .collect(StringBuilder::new, StringBuilder::appendCodePoint,
+                        StringBuilder::append)
+                .toString();
+    }
+
+    int count3 = 3;
+
+    void mailGiris() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Sistem tarafindan uretilen mail adresinizi giriniz : ");
+        String mailKontrol = scan.nextLine();
+
+        if (!mailKontrol.equals(eMail)) {
+            count3--;
+            if (count3 == 0) {
+                System.out.println("3 defa hatali giris yaptiniz. Cikisiniz gerceklestirilnistir.");
+            } else {
+                System.out.println("Yanlis girdiniz tekrar deneyiniz. Kalan hakkiniz : " + count3);
+                mailGiris();
+            }
+
+        } else {
+            System.out.println("Mail adresiniz eslesmistir.");
+        }
+    }
+
+    int count4 = 3;
+
     void sifreKontrol() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Sistem tarafindan uretilen gecici sifrenizi giriniz : ");
@@ -302,8 +309,7 @@ void bilgileriGoster() {
             count4--;
             if (count4 == 0) {
                 System.out.println("3 defa hatali giris yaptiniz. Cikisiniz gerceklestirilnistir.");
-            }
-            else{
+            } else {
                 System.out.println("Yanlis girdiniz tekrar deneyiniz. Kalan hakkiniz : " + count4);
                 sifreKontrol();
             }
@@ -311,12 +317,12 @@ void bilgileriGoster() {
             System.out.println("sifreniz eslesmistir.");
         }
     }
-	@Override
-	public String toString() {
-		return "\nWorker [isim=" + isim + ", soyisim=" + soyisim + ", id=" + id + ", sirketAdi=" + sirketAdi
-				+ ", departman=" + departman + ", eMail=" + eMail + "]";
-	}
 
+    @Override
+    public String toString() {
+        return "\nWorker [isim=" + isim + ", soyisim=" + soyisim + ", id=" + id + ", sirketAdi=" + sirketAdi
+                + ", departman=" + departman + ", eMail=" + eMail + "]";
+    }
 
 
 }

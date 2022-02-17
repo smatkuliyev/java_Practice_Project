@@ -13,20 +13,20 @@ public class Q16 {
         F F F F F F
         sekli yazdiriniz
         */
-    	Scanner scan= new Scanner(System.in);
-		System.out.print("Tablo boyutunu giriniz : ");
-		int boyut = scan.nextInt();
-		int harf = 65;
-		
-    	for (int baba = 0; baba < boyut; baba++) {
-			for (int evlat = 0; evlat <= baba; evlat++) {
-				System.out.print((char)(harf + baba) + " ");
-			}
-			
-			System.out.println();
-		}
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Tablo boyutunu giriniz : ");
+        int boyut = scan.nextInt();
+        int harf = 65;
 
-		scan.close();
+        for (int baba = 0; baba < boyut; baba++) {
+            for (int evlat = 0; evlat <= baba; evlat++) {
+                System.out.print((char) (harf + baba) + " ");
+            }
+
+            System.out.println();
+        }
+
+        scan.close();
 
     }
 

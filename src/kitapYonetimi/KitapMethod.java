@@ -1,10 +1,12 @@
 package kitapYonetimi;
+
 import java.util.List;
 import java.util.Scanner;
 
 public class KitapMethod {
     static Scanner scan = new Scanner(System.in);
     static int kitapNo = 1000;
+
     public static void menu(List<Kitap> liste) {//
         System.out.println("========= KİTAP PROGRAMI =============\n1: Kitap ekle\n2: Numara ile kitap sil\n3: " +
                 "Tum kitaplari listele\n4: Bitir");
@@ -53,12 +55,13 @@ public class KitapMethod {
         System.out.println(silinecekNo + " ait kitap bulunamadi !!!");
         menu(liste);
     }
+
     public static void kitaplarEkle(List<Kitap> liste) {
-        Kitap kitap1 =new Kitap(++kitapNo,"sefiller","victor hugo",1890,100);
-        Kitap kitap2 =new Kitap(++kitapNo,"serenad","falan filan",1999,220);
-        Kitap kitap3 =new Kitap(++kitapNo,"insan ne ile yasar","victor hugo",2000,150);
-        Kitap kitap4 =new Kitap(++kitapNo,"korler","benim kitabım",2010,130);
-        Kitap kitap5 =new Kitap(++kitapNo,"ebik gabık","kudret narı",2011,90);
+        Kitap kitap1 = new Kitap(++kitapNo, "sefiller", "victor hugo", 1890, 100);
+        Kitap kitap2 = new Kitap(++kitapNo, "serenad", "falan filan", 1999, 220);
+        Kitap kitap3 = new Kitap(++kitapNo, "insan ne ile yasar", "victor hugo", 2000, 150);
+        Kitap kitap4 = new Kitap(++kitapNo, "korler", "benim kitabım", 2010, 130);
+        Kitap kitap5 = new Kitap(++kitapNo, "ebik gabık", "kudret narı", 2011, 90);
 
         liste.add(kitap1);
         liste.add(kitap2);

@@ -29,36 +29,36 @@ public class Q10 {
 
      */
     public static void main(String[] args) {
-		Scanner scan= new Scanner(System.in);
-		System.out.print("Bir harf giriniz : ");
-		String girilenHarf = scan.nextLine();
-		String sesliHarfler = "aeiuoAEIOU";
-		String sessizHarfler="bcdfghjklmnprstvyxzwqBCDFGJKLMNPRSTVYZXWQ";
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Bir harf giriniz : ");
+        String girilenHarf = scan.nextLine();
+        String sesliHarfler = "aeiuoAEIOU";
+        String sessizHarfler = "bcdfghjklmnprstvyxzwqBCDFGJKLMNPRSTVYZXWQ";
 
-		
-		if (girilenHarf.length() == 1) { //tek harf control
-			
-			for (int i = 0; i < sessizHarfler.length(); /* i++ */) {
-				
-				if (sesliHarfler.contains(girilenHarf)) {
-					System.out.println("Girilen harf seslidir.");
-					break;
-					
-				} else if (sessizHarfler.contains(girilenHarf)){
-					System.out.println("Girilen harf sessizdir.");
-					break;
-					
-				} else {
-					System.out.println("Ozel karakter girdiniz");
-					break;
-				}
-			}
-			
-		} else {
-			System.out.println("Fazla karakter girdiniz");
-		}
 
-		scan.close();
+        if (girilenHarf.length() == 1) { //tek harf control
+
+            for (int i = 0; i < sessizHarfler.length(); /* i++ */) {
+
+                if (sesliHarfler.contains(girilenHarf)) {
+                    System.out.println("Girilen harf seslidir.");
+                    break;
+
+                } else if (sessizHarfler.contains(girilenHarf)) {
+                    System.out.println("Girilen harf sessizdir.");
+                    break;
+
+                } else {
+                    System.out.println("Ozel karakter girdiniz");
+                    break;
+                }
+            }
+
+        } else {
+            System.out.println("Fazla karakter girdiniz");
+        }
+
+        scan.close();
     }
 }
 

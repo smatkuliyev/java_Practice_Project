@@ -9,25 +9,25 @@ public class Q07 {
          * Input : {{1,2,-3},{41,55},{-61,-17,80}}
          * Output : 8
          */
-    	
-    	int arr[][] = {{1,2,-3},{41,55},{-61,-17,80}};
-    	
-    	System.out.println( maxDegerBul(arr) ); 
-    	 
+
+        int arr[][] = {{1, 2, -3}, {41, 55}, {-61, -17, 80}};
+
+        System.out.println(maxDegerBul(arr));
+
     }
 
-	private static int maxDegerBul(int[][] arr) {
-		int max = 0;
-		
-		for (int kat = 0; kat < arr.length; kat++) {
-			
-			for (int daire = 0; daire < arr[kat].length; daire++) {
-				
-				if (arr[kat][daire] > max) {
-					max = arr[kat][daire];
-				}				
-			}			
-		}		
-		return max;
-	}
+    private static int maxDegerBul(int[][] arr) {
+        int max = 0;
+
+        for (int kat = 0; kat < arr.length; kat++) {
+
+            for (int daire = 0; daire < arr[kat].length; daire++) {
+
+                if (arr[kat][daire] > max) {
+                    max = arr[kat][daire];
+                }
+            }
+        }
+        return max;
+    }
 }

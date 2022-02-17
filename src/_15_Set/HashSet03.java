@@ -16,25 +16,22 @@ public class HashSet03 {
      */
     public static void main(String[] args) {
 
-        long start1=System.currentTimeMillis();
-        TreeSet<String > ts1 =new TreeSet<>(Arrays.asList("said", "oguz", "levent", "oner", "sedef"));
+        long start1 = System.currentTimeMillis();
+        TreeSet<String> ts1 = new TreeSet<>(Arrays.asList("said", "oguz", "levent", "oner", "sedef"));
 
-        long stop1=System.currentTimeMillis();
+        long stop1 = System.currentTimeMillis();
         System.out.println(ts1);
-        System.out.println("treeSet hizi :"+(stop1-start1));
+        System.out.println("treeSet hizi :" + (stop1 - start1));
 
 
-
-        long start=System.currentTimeMillis();
-        HashSet<String> hs =new HashSet<>(Arrays.asList("said", "oguz", "levent", "oner", "sedef"));
+        long start = System.currentTimeMillis();
+        HashSet<String> hs = new HashSet<>(Arrays.asList("said", "oguz", "levent", "oner", "sedef"));
         System.out.println(hs);//[sedef, oner, oguz, said, levent]
 
-        TreeSet<String > ts =new TreeSet<>(hs);
+        TreeSet<String> ts = new TreeSet<>(hs);
         System.out.println(ts);//[levent, oguz, oner, said, sedef]
-        long stop=System.currentTimeMillis();
-        System.out.println("hashSet ile hizi: "+(stop-start));
-        
-
+        long stop = System.currentTimeMillis();
+        System.out.println("hashSet ile hizi: " + (stop - start));
 
 
     }

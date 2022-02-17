@@ -3,30 +3,30 @@ package _08_While_DoWhile;
 import java.util.Scanner;
 
 public class Q12 {
-	
-	 //Bir top belirli  yükseklikten atýlmaktadýr.
-    // Atýldýktan sonra, atýldýðý yüksekliðin 3/4 u kadar yerden yukarý doðru zýplamaktadýr
-    // Top zýplama  yüksekliði 1 metrenin altýna indiðinde durmaktadýr.
-    // Bu ana kadar aldigi toplam yolu ve yere vurma sayýsýný bulunuz.
 
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		System.out.print("Topun birakildigi ilk yuksekligi giriniz : ");
-		double yukseklik = scan.nextDouble();
-		double toplamYol = 0;
-		int yereVurmaSayisi = 0;
-		
-		do {
-			yereVurmaSayisi++;
-			toplamYol+=yukseklik;
-			yukseklik*=(0.75);
-			toplamYol+=yukseklik;
-		} while (yukseklik>=1);
-		
-		System.out.println("Topun yere vurma sayisi : " + yereVurmaSayisi);
-		System.out.println("topun gectidi toplam yol : " + toplamYol);
-		
-		scan.close();
-	}
+    //Bir top belirli  yï¿½kseklikten atï¿½lmaktadï¿½r.
+    // Atï¿½ldï¿½ktan sonra, atï¿½ldï¿½ï¿½ï¿½ yï¿½ksekliï¿½in 3/4 u kadar yerden yukarï¿½ doï¿½ru zï¿½plamaktadï¿½r
+    // Top zï¿½plama  yï¿½ksekliï¿½i 1 metrenin altï¿½na indiï¿½inde durmaktadï¿½r.
+    // Bu ana kadar aldigi toplam yolu ve yere vurma sayï¿½sï¿½nï¿½ bulunuz.
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Topun birakildigi ilk yuksekligi giriniz : ");
+        double yukseklik = scan.nextDouble();
+        double toplamYol = 0;
+        int yereVurmaSayisi = 0;
+
+        do {
+            yereVurmaSayisi++;
+            toplamYol += yukseklik;
+            yukseklik *= (0.75);
+            toplamYol += yukseklik;
+        } while (yukseklik >= 1);
+
+        System.out.println("Topun yere vurma sayisi : " + yereVurmaSayisi);
+        System.out.println("topun gectidi toplam yol : " + toplamYol);
+
+        scan.close();
+    }
 
 }

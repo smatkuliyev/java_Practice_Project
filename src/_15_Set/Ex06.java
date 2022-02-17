@@ -9,23 +9,21 @@ public class Ex06 {
         // 1 den 20 e kadar olan sayilarla doldurup yazdirin
         // Soru 2 : Bu SET i bir fonksiyonda diziye ceviriniz ve yazdiriniz.
 
-        HashSet<Integer> hs=generateSet();
+        HashSet<Integer> hs = generateSet();
         System.out.println("hs = " + hs);
         System.out.println("hs.size() = " + hs.size());
 
-        Integer[] dizi=convertToArray(hs);
+        Integer[] dizi = convertToArray(hs);
         System.out.println("dizi = " + Arrays.toString(dizi));
     }
 
-    public static Integer[] convertToArray(HashSet<Integer> hs)
-    {
+    public static Integer[] convertToArray(HashSet<Integer> hs) {
         //1.Yontem
-        Integer[] dizi=new Integer[hs.size()];
+        Integer[] dizi = new Integer[hs.size()];
 
-        int index=0;
-        for(int e : hs)
-        {
-            dizi[index]=e;
+        int index = 0;
+        for (int e : hs) {
+            dizi[index] = e;
             index++;
         }
 
@@ -35,8 +33,7 @@ public class Ex06 {
         return dizi;
     }
 
-    public static HashSet<Integer> generateSet()
-    {
+    public static HashSet<Integer> generateSet() {
         HashSet<Integer> set = new HashSet<>();
 
         int a = 0;
@@ -45,8 +42,7 @@ public class Ex06 {
 //            set.add(a);
 //        }
 
-        while(set.size() < 10)
-        {
+        while (set.size() < 10) {
             a = (int) (Math.random() * 20);
             set.add(a);
         }

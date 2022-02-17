@@ -3,11 +3,11 @@ package _07_ForLoop;
 import java.util.Scanner;
 
 public class Q13 {
-	
-	
-	public static void main(String[] args) {
-		
-		/*
+
+
+    public static void main(String[] args) {
+
+        /*
          * Kullanicidan bir cumle ve bir harf alin,
          * Cumlede harfin kac kere
          * kullanildigini bulup, yazdirin
@@ -18,24 +18,24 @@ public class Q13 {
          *
          * OUTPUT : Girdiginiz cumlede "e" harfi 3 kere kullanilmis.
          */
-		
+
         Scanner scan = new Scanner(System.in);
         System.out.print("Bir cumle giriniz : ");
         String cumle = scan.nextLine().toLowerCase();
 
         System.out.print("Bir harf giriniz : ");
         char harf = scan.next().toLowerCase().charAt(0);
-		int sayac = 0;
-        
-        for (int i = 0; i < cumle.length(); i++) {
-			if (cumle.charAt(i) == harf ) {
-				sayac++;
-			}
-		}
+        int sayac = 0;
 
-		System.out.println(harf + " > " + cumle + ": icinde " + sayac + " kere tekrarlanmistir.");
-		
-		scan.close();
-	}
+        for (int i = 0; i < cumle.length(); i++) {
+            if (cumle.charAt(i) == harf) {
+                sayac++;
+            }
+        }
+
+        System.out.println(harf + " > " + cumle + ": icinde " + sayac + " kere tekrarlanmistir.");
+
+        scan.close();
+    }
 
 }

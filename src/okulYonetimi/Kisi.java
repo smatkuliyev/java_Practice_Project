@@ -2,53 +2,53 @@ package okulYonetimi;
 
 public class Kisi {
 
-	   private String adSoyad;
-	   private String kimlikNo;
-	   private int yas;
+    private String adSoyad;
+    private String kimlikNo;
+    private int yas;
 
-	   public  Kisi(){
-	   }
-	    public Kisi(String adSoyad, String kimlikNo, int yas) {
-	        setAdSoyad(adSoyad);
-	        this.kimlikNo = kimlikNo;
-	        setYas(yas);
-	    }
+    public Kisi() {
+    }
 
-	    public String getAdSoyad() {
-	        return adSoyad;
-	    }
+    public Kisi(String adSoyad, String kimlikNo, int yas) {
+        setAdSoyad(adSoyad);
+        this.kimlikNo = kimlikNo;
+        setYas(yas);
+    }
 
-	    public void setAdSoyad(String adSoyad) {
+    public String getAdSoyad() {
+        return adSoyad;
+    }
 
-	        this.adSoyad = adSoyad.toUpperCase();
-	    }
+    public void setAdSoyad(String adSoyad) {
 
-	    public String getKimlikNo() {
-	        return kimlikNo;
-	    }
+        this.adSoyad = adSoyad.toUpperCase();
+    }
 
-	    public void setKimlikNo(String kimlikNo) {
-	        this.kimlikNo = kimlikNo;
-	    }
+    public String getKimlikNo() {
+        return kimlikNo;
+    }
 
-	    public int getYas() {
-	        return yas;
-	    }
+    public void setKimlikNo(String kimlikNo) {
+        this.kimlikNo = kimlikNo;
+    }
 
-	    public void setYas(int yas) {
-	        if (yas <0) {
-	            this.yas=-yas;
-	        }
-	        else
-	        this.yas = yas;
-	    }
+    public int getYas() {
+        return yas;
+    }
 
-	    @Override
-	    public String toString() {
-	        return "Kisi{" +
-	                "adSoyad='" + adSoyad + '\'' +
-	                ", kimlikNo='" + kimlikNo + '\'' +
-	                ", yas=" + yas +
-	                '}';
-	    }
-	}
+    public void setYas(int yas) {
+        if (yas < 0) {
+            this.yas = -yas;
+        } else
+            this.yas = yas;
+    }
+
+    @Override
+    public String toString() {
+        return "Kisi{" +
+                "adSoyad='" + adSoyad + '\'' +
+                ", kimlikNo='" + kimlikNo + '\'' +
+                ", yas=" + yas +
+                '}';
+    }
+}

@@ -7,7 +7,7 @@ public class Yazar {
 
 
     public String yazarBilgileri() {
-        return  "Yazar\n" +
+        return "Yazar\n" +
                 "yazarAdi = " + yazarAdi + '\n' +
                 "yazarYasi = " + yazarYasi +
                 "yazarMemleketi = " + yazarMemleketi + '\n' +
@@ -16,9 +16,9 @@ public class Yazar {
 
     public Yazar(String yazarAdi, int yazarYasi, String yazarMemleketi) {
         super();
-        this.yazarAdi=yazarAdi;
-        this.yazarYasi=yazarYasi;
-        this.yazarMemleketi=yazarMemleketi;
+        this.yazarAdi = yazarAdi;
+        this.yazarYasi = yazarYasi;
+        this.yazarMemleketi = yazarMemleketi;
     }
 
     public String getYazarAdi() {

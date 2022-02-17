@@ -20,27 +20,27 @@ public class Q10 {
 		 3) \\s   ==> space
 		 	 \\S   ==> space disindaki hersey
 	 */
-    	Scanner scan = new Scanner(System.in);
-    	System.out.print("Isminizi giriniz : ");
-    	String isim = scan.next();
-    	
-    	System.out.print("Soyisminizi giriniz : ");
-    	String soyisim = scan.next();
-    	
-    	System.out.print("Kredi Karti numaranizi giriniz : ");
-    	String kkNo = scan.next();
-    	
-    	isim = isim.toUpperCase().charAt(0)+isim.substring(1).replaceAll("\\w", "*");
-    	soyisim = soyisim.toUpperCase().charAt(0)+soyisim.substring(1).replaceAll("\\w", "*");
-    	kkNo = kkNo.substring(0, 12).replaceAll("\\d", "*") + kkNo.substring(12);
-    	
-    	
-    	if (kkNo.length() == 16) {
-			System.out.println("Ad : " + isim + "\nSoyad : " + soyisim + "\nkartNo : " + kkNo);
-		} else {
-			System.out.println("Gecersiz kredi karti numarasi");
-		}
-    	
-    	scan.close();
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Isminizi giriniz : ");
+        String isim = scan.next();
+
+        System.out.print("Soyisminizi giriniz : ");
+        String soyisim = scan.next();
+
+        System.out.print("Kredi Karti numaranizi giriniz : ");
+        String kkNo = scan.next();
+
+        isim = isim.toUpperCase().charAt(0) + isim.substring(1).replaceAll("\\w", "*");
+        soyisim = soyisim.toUpperCase().charAt(0) + soyisim.substring(1).replaceAll("\\w", "*");
+        kkNo = kkNo.substring(0, 12).replaceAll("\\d", "*") + kkNo.substring(12);
+
+
+        if (kkNo.length() == 16) {
+            System.out.println("Ad : " + isim + "\nSoyad : " + soyisim + "\nkartNo : " + kkNo);
+        } else {
+            System.out.println("Gecersiz kredi karti numarasi");
+        }
+
+        scan.close();
     }
 }

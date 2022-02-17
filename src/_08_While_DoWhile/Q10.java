@@ -4,25 +4,25 @@ import java.util.Scanner;
 
 public class Q10 {
 
-	public static void main(String[] args) {
-		// Kullanýcýdan 5 sayý isteyiniz, bu sayýlardan en büyüðünü bularak yazdýrýnýz.
-		
-		Scanner scan = new Scanner(System.in);
-		
-		int enbSayi =0;
-		int count = 0;
-		
-		while (count < 5) {
-			System.out.print("Sayi giriniz : ");
-			int sayi = scan.nextInt();
-			if (sayi>enbSayi) {
-				enbSayi = sayi;
-			}
-			count++;
-		}
-		System.out.println("En buyuk sayi : " + enbSayi);
-		
-		scan.close();
-	}
+    public static void main(String[] args) {
+        // Kullanï¿½cï¿½dan 5 sayï¿½ isteyiniz, bu sayï¿½lardan en bï¿½yï¿½ï¿½ï¿½nï¿½ bularak yazdï¿½rï¿½nï¿½z.
+
+        Scanner scan = new Scanner(System.in);
+
+        int enbSayi = 0;
+        int count = 0;
+
+        while (count < 5) {
+            System.out.print("Sayi giriniz : ");
+            int sayi = scan.nextInt();
+            if (sayi > enbSayi) {
+                enbSayi = sayi;
+            }
+            count++;
+        }
+        System.out.println("En buyuk sayi : " + enbSayi);
+
+        scan.close();
+    }
 
 }

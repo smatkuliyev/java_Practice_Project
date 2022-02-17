@@ -5,69 +5,69 @@ import java.util.Scanner;
 public class NotHesaplama {
     public static void main(String[] args) {
         /*
-        1.Kullanýcýya    "Vize sýnav sonucunuzu giriniz :"
-        2.vize notu double deðerinde girilecek.
+        1.Kullanï¿½cï¿½ya    "Vize sï¿½nav sonucunuzu giriniz :"
+        2.vize notu double deï¿½erinde girilecek.
 
-        3. Kullanýcýya  "Vize sýnavý yüzdesini giriniz". ->> double olmalý ->> 0,40 etkiliyor   !!Yüzde kaç etkilediðini Sisteme siz giriyorsunuz.!!
+        3. Kullanï¿½cï¿½ya  "Vize sï¿½navï¿½ yï¿½zdesini giriniz". ->> double olmalï¿½ ->> 0,40 etkiliyor   !!Yï¿½zde kaï¿½ etkilediï¿½ini Sisteme siz giriyorsunuz.!!
 
-        4.Kullanýcýya    "Final sýnav sonucunuzu giriniz.
+        4.Kullanï¿½cï¿½ya    "Final sï¿½nav sonucunuzu giriniz.
 
-        5. final notu double deðerinde olmalý. (örn: 65,5)
+        5. final notu double deï¿½erinde olmalï¿½. (ï¿½rn: 65,5)
 
-        6.Kullanýcýya    "Final sýnavý yüzdesini giriniz"-->> double olmalý ->> 0,60 etkiliyor.
+        6.Kullanï¿½cï¿½ya    "Final sï¿½navï¿½ yï¿½zdesini giriniz"-->> double olmalï¿½ ->> 0,60 etkiliyor.
 
-        7. Vize gecme ortalamasýný bulmak için, vize nin yüzde40 ý, finalin yüzde60 ý alýnmalý ve çýkan sonuçlar toplanmalýdýr.
+        7. Vize gecme ortalamasï¿½nï¿½ bulmak iï¿½in, vize nin yï¿½zde40 ï¿½, finalin yï¿½zde60 ï¿½ alï¿½nmalï¿½ ve ï¿½ï¿½kan sonuï¿½lar toplanmalï¿½dï¿½r.
 
-        8. Çýkan sonucu (dersin not ortalamasýný)   double toplam  ' a eþitleyebilirsiniz.
+        8. ï¿½ï¿½kan sonucu (dersin not ortalamasï¿½nï¿½)   double toplam  ' a eï¿½itleyebilirsiniz.
 
-        todo  :  Koþul kýsmý
- 			eðer ortalamasý 90(90 dahil) 'dan büyük ise, harf notu olarak 
- 			AA, 80(80dahil)   ile 90 arasýnda ise  
- 			BA, 70(70 dahil)   ile 80 arasýnda ise 
- 			BB, 60(60dahil) ile 70 arasýnda ise 
- 			CB, 50(50 dahil) ile 60 arasýnda ise 
- 			CC, 40(40 dahil) ile 50 arasýnda ise 
- 			DC, 30(30 dahil) ile 40 arasýnda ise 
- 			DD, 30 'dan düþük ise FF  gelmeli.
+        todo  :  Koï¿½ul kï¿½smï¿½
+ 			eï¿½er ortalamasï¿½ 90(90 dahil) 'dan bï¿½yï¿½k ise, harf notu olarak 
+ 			AA, 80(80dahil)   ile 90 arasï¿½nda ise  
+ 			BA, 70(70 dahil)   ile 80 arasï¿½nda ise 
+ 			BB, 60(60dahil) ile 70 arasï¿½nda ise 
+ 			CB, 50(50 dahil) ile 60 arasï¿½nda ise 
+ 			CC, 40(40 dahil) ile 50 arasï¿½nda ise 
+ 			DC, 30(30 dahil) ile 40 arasï¿½nda ise 
+ 			DD, 30 'dan dï¿½ï¿½ï¿½k ise FF  gelmeli.
  			
          */
-    	
-    	Scanner scan = new Scanner(System.in);
-    	
-    	System.out.print("Vize sýnav sonucunuzu giriniz :");
-    	double vizeNotu = scan.nextDouble();
-    	
-    	System.out.print("Vize sýnavý yüzdesini giriniz :");
-    	double vizeYuzdesi = scan.nextDouble();
-    	
-    	System.out.print("Final sýnav sonucunuzu giriniz :");
-    	double finalNotu = scan.nextDouble();
-    	
-    	System.out.print("Final sýnavý yüzdesini giriniz :");
-    	double finalYuzdesi = scan.nextDouble(); 
-    	
-    	double ortalama = (vizeNotu*vizeYuzdesi/100) + (finalNotu*finalYuzdesi/100); 
-    	
-    	System.out.println("Ortalamanýz : " + ortalama);
-    	
-    	if (ortalama>=90) {
-			System.out.println("Geçme notunuz : AA");
-		} else if(ortalama>=80) {
-			System.out.println("Geçme notunuz : BA");
-		} else if(ortalama>=70) {
-			System.out.println("Geçme notunuz : BB");
-		} else if(ortalama>=60) {
-			System.out.println("Geçme notunuz : CB");
-		} else if(ortalama>=50) {
-			System.out.println("Geçme notunuz : CC");
-		} else if(ortalama>=40) {
-			System.out.println("Geçme notunuz : DC");
-		} else if(ortalama>=30) {
-			System.out.println("Geçme notunuz : DD");
-		} else {
-			System.out.println("Geçme notunuz : FF");
-		}
-    	
-    	scan.close();
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Vize sï¿½nav sonucunuzu giriniz :");
+        double vizeNotu = scan.nextDouble();
+
+        System.out.print("Vize sï¿½navï¿½ yï¿½zdesini giriniz :");
+        double vizeYuzdesi = scan.nextDouble();
+
+        System.out.print("Final sï¿½nav sonucunuzu giriniz :");
+        double finalNotu = scan.nextDouble();
+
+        System.out.print("Final sï¿½navï¿½ yï¿½zdesini giriniz :");
+        double finalYuzdesi = scan.nextDouble();
+
+        double ortalama = (vizeNotu * vizeYuzdesi / 100) + (finalNotu * finalYuzdesi / 100);
+
+        System.out.println("Ortalamanï¿½z : " + ortalama);
+
+        if (ortalama >= 90) {
+            System.out.println("Geï¿½me notunuz : AA");
+        } else if (ortalama >= 80) {
+            System.out.println("Geï¿½me notunuz : BA");
+        } else if (ortalama >= 70) {
+            System.out.println("Geï¿½me notunuz : BB");
+        } else if (ortalama >= 60) {
+            System.out.println("Geï¿½me notunuz : CB");
+        } else if (ortalama >= 50) {
+            System.out.println("Geï¿½me notunuz : CC");
+        } else if (ortalama >= 40) {
+            System.out.println("Geï¿½me notunuz : DC");
+        } else if (ortalama >= 30) {
+            System.out.println("Geï¿½me notunuz : DD");
+        } else {
+            System.out.println("Geï¿½me notunuz : FF");
+        }
+
+        scan.close();
     }
 }

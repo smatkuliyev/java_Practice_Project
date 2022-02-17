@@ -2,12 +2,12 @@ package adventureGame;
 
 public class Main {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		Game game = new Game();
-		game.login();
-		
-		
-	}
+        Game game = new Game();
+        game.login();
+
+
+    }
 
 }

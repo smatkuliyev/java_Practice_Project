@@ -11,7 +11,7 @@ public class Q03 {
          What is the output of the following code?
         Asagidaki code'un  ciktisi  nedir?
         */
-        LocalDate date = LocalDate.of(2018,Month.FEBRUARY, 29);
+        LocalDate date = LocalDate.of(2018, Month.FEBRUARY, 29);
 
         System.out.println(date.getYear() + " " + date.getMonth() + " " + date.getDayOfMonth());
 

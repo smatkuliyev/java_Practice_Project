@@ -41,45 +41,45 @@ public class Q10 {
 ​
           sonuç 300 olmalidir.
    */
-  	
-		Scanner scan = new Scanner(System.in);
-		System.out.print("Hızınızı girin : ");
-		int hiz = scan.nextInt();
-		
-		System.out.print("Ehliyetiniz var mı? Evet içn 1 i , Hayır için 0 ı tuşlayınız : ");
-		int ehliyet = scan.nextInt();
-		
-		if (ehliyet == 1) {
-			
-			if (hiz < 55) {
-				System.out.println("Hız limitine uyuyorsunuz, Teşekkürler anlayışlı sürücü!");
-			} else if (hiz < 75) {
-				System.out.println("Hız limitiniz aştınız, cezanın : $" + (100) + ".");
-			} else if (hiz < 85) {
-				System.out.println("Hız limitiniz aştınız, cezanın : $" + (150) + ".");
-			} else if (hiz < 95) {
-				System.out.println("Hız limitiniz aştınız, cezanın : $" + (320) + ".");
-			} else {
-				System.out.println("Hız limitiniz aştınız, cezanın : $" + (500) + ".");
-			}
-			
-		} else {
-			
-			if (hiz < 55) {
-				System.out.println("Korsan sürücü ehliyetiniz yok, cezanın : $" + (200));
-			} else if (hiz < 75) {
-				System.out.println("Hız limitiniz aştınız, cezanın : $" + (100+200) + ".");
-			} else if (hiz < 85) {
-				System.out.println("Hız limitiniz aştınız, cezanın : $" + (150+200) + ".");
-			} else if (hiz < 95) {
-				System.out.println("Hız limitiniz aştınız, cezanın : $" + (320+200) + ".");
-			} else {
-				System.out.println("Hız limitiniz aştınız, cezanın : $" + (500+200) + ".");
-			}
-		}
-		
-     
-		scan.close();
-    	
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Hızınızı girin : ");
+        int hiz = scan.nextInt();
+
+        System.out.print("Ehliyetiniz var mı? Evet içn 1 i , Hayır için 0 ı tuşlayınız : ");
+        int ehliyet = scan.nextInt();
+
+        if (ehliyet == 1) {
+
+            if (hiz < 55) {
+                System.out.println("Hız limitine uyuyorsunuz, Teşekkürler anlayışlı sürücü!");
+            } else if (hiz < 75) {
+                System.out.println("Hız limitiniz aştınız, cezanın : $" + (100) + ".");
+            } else if (hiz < 85) {
+                System.out.println("Hız limitiniz aştınız, cezanın : $" + (150) + ".");
+            } else if (hiz < 95) {
+                System.out.println("Hız limitiniz aştınız, cezanın : $" + (320) + ".");
+            } else {
+                System.out.println("Hız limitiniz aştınız, cezanın : $" + (500) + ".");
+            }
+
+        } else {
+
+            if (hiz < 55) {
+                System.out.println("Korsan sürücü ehliyetiniz yok, cezanın : $" + (200));
+            } else if (hiz < 75) {
+                System.out.println("Hız limitiniz aştınız, cezanın : $" + (100 + 200) + ".");
+            } else if (hiz < 85) {
+                System.out.println("Hız limitiniz aştınız, cezanın : $" + (150 + 200) + ".");
+            } else if (hiz < 95) {
+                System.out.println("Hız limitiniz aştınız, cezanın : $" + (320 + 200) + ".");
+            } else {
+                System.out.println("Hız limitiniz aştınız, cezanın : $" + (500 + 200) + ".");
+            }
+        }
+
+
+        scan.close();
+
     }
 }

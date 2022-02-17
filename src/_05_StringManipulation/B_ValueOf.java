@@ -2,7 +2,7 @@ package _05_StringManipulation;
 
 public class B_ValueOf {
     @SuppressWarnings("unused")
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         // Integer.valueOf() rakamlarla olusturulan String'leri sayiya donusturur. Boylece rakamlarla olusturulan
         // Stringlerle matematiksel islemler yapabilmemizi saglar.
 
@@ -24,9 +24,8 @@ public class B_ValueOf {
         System.out.println(String.valueOf(maasErkek) + String.valueOf(maasKadin));//19002000
 
 
-
         String girilenKelime = "65"; // su haliyle ahmet gibi bir kelimedir.sayisal isleme giremez
-        int girilenSayi=65;
+        int girilenSayi = 65;
 
         // kelimenin -> sayiya cevrilmesi
         int girilenKelimeninSayiHali = Integer.parseInt(girilenKelime); // donusecek tipe uygun donusum
@@ -40,24 +39,21 @@ public class B_ValueOf {
         // ekrana yazdırınız.
 
 
-
-
         //toString() methodu;
-        short sayi=345;
+        short sayi = 345;
         String strSayi = Short.toString(sayi);
 
         System.out.println("strSayi = " + strSayi);
         System.out.println("Short.toString(sayi) = " + Short.toString(sayi));
 
 
-
         //Soru:  String olarak verilen 2 adet bagis parasının toplamini yazdiriniz.
 
-        String bagis1="500";
-        String bagis2="1500";
+        String bagis1 = "500";
+        String bagis2 = "1500";
 
-        int intBagis1= Integer.parseInt(bagis1);
-        int intBagis2= Integer.parseInt(bagis2);
+        int intBagis1 = Integer.parseInt(bagis1);
+        int intBagis2 = Integer.parseInt(bagis2);
 
         int toplam = intBagis1 + intBagis2;
         //int toplam = Integer.parseInt(bagis1) + Integer.parseInt(bagis2) ;
@@ -65,15 +61,14 @@ public class B_ValueOf {
         System.out.println("toplam = " + toplam);
 
 
-
         // Soru :String olarak verilen karenin 1 kenar uzunluğundan
         // karenin çevresinin uzunluğunu bulunuz.
 
-        String kenar="8";
+        String kenar = "8";
 
-        int intKenar= Integer.parseInt(kenar);
+        int intKenar = Integer.parseInt(kenar);
 
-        int cevre = intKenar + intKenar + intKenar +intKenar ;
+        int cevre = intKenar + intKenar + intKenar + intKenar;
 
         System.out.println("cevre = " + cevre);
     }

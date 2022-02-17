@@ -13,18 +13,18 @@ public class Q12 {
         Girilen sayi=4
         Kareler toplami=30
      */
-    	
+
         Scanner scan = new Scanner(System.in);
         System.out.print("1'den buyuk bir tam sayi giriniz : ");
         int sayi = scan.nextInt();
-    	int kareTopla = 0;
-        
+        int kareTopla = 0;
+
         for (int i = 1; i <= sayi; i++) {
-        	kareTopla+=(i*i);
-		}
-        
+            kareTopla += (i * i);
+        }
+
         System.out.println(sayi + " sayisindan 1'e kadar olan sayilarin karelerinin toplami : " + kareTopla);
-    	
+
         scan.close();
     }
 }

@@ -21,7 +21,7 @@ public class Ex09 {
 
     public static void elementEkle(HashSet<Integer> set, int[] elements) {
 
-        for (int e: elements) {
+        for (int e : elements) {
             set.add(e);
         }
     }

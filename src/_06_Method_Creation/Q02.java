@@ -13,27 +13,27 @@ public class Q02 {
 		         name2= ahmet
 		         Print ==> mehahmetmet
 		*/
-    	Scanner scan = new Scanner(System.in);	
-		System.out.print("Lutfen name1 giriniz : "); 	
-		String name1 = scan.nextLine();
-		
-		System.out.print("Lutfen name2 giriniz : "); 	
-		String name2 = scan.nextLine();
-		
-		ortasinaEkle(name1, name2);
-    	
-		scan.close();
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Lutfen name1 giriniz : ");
+        String name1 = scan.nextLine();
+
+        System.out.print("Lutfen name2 giriniz : ");
+        String name2 = scan.nextLine();
+
+        ortasinaEkle(name1, name2);
+
+        scan.close();
     }
 
-	private static void ortasinaEkle(String n1, String n2) {
-		
-		if (n1.length()%2 == 0) {
-			
-			System.out.println(n1.substring(0, n1.length()/2) +" "+ n2 +" "+ n1.substring(n1.length()/2));
-			
-		} else {
-			System.out.println("name1 cift sayili olmadigi icin ortasina yerlestiremedik");
-		}
-		
-	}
+    private static void ortasinaEkle(String n1, String n2) {
+
+        if (n1.length() % 2 == 0) {
+
+            System.out.println(n1.substring(0, n1.length() / 2) + " " + n2 + " " + n1.substring(n1.length() / 2));
+
+        } else {
+            System.out.println("name1 cift sayili olmadigi icin ortasina yerlestiremedik");
+        }
+
+    }
 }

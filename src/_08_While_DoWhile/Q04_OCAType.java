@@ -2,8 +2,8 @@ package _08_While_DoWhile;
 
 public class Q04_OCAType {
 
-	public static void main(String[] args) {
-		int num = 10;
+    public static void main(String[] args) {
+        int num = 10;
         do {
             System.out.print(num-- + " " + num);
         } while (num == 0);
@@ -16,7 +16,7 @@ public class Q04_OCAType {
          * E) Nothing is printed
  cevap *** F) 10 9
          */
-        
-	}
+
+    }
 
 }

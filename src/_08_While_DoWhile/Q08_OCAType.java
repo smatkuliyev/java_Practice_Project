@@ -2,25 +2,25 @@ package _08_While_DoWhile;
 
 public class Q08_OCAType {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		/*
-		aþaðýdaki kod blogunun çýktýsý ne olur?
-		 */	
-		        int x = 3;
-		        int i = 0;
-		        while (i < 3) {
-		            x += 1;
-		            i += 1;
-		        }
-		        System.out.println("x = " + x);
-		        System.out.println("i = " + i);
-		    }		
-		// A) 	x = 3
-		//		i = 0
+		aï¿½aï¿½ï¿½daki kod blogunun ï¿½ï¿½ktï¿½sï¿½ ne olur?
+		 */
+        int x = 3;
+        int i = 0;
+        while (i < 3) {
+            x += 1;
+            i += 1;
+        }
+        System.out.println("x = " + x);
+        System.out.println("i = " + i);
+    }
+    // A) 	x = 3
+    //		i = 0
 
-		// B) 	x = 6      cevap B)
-		//		i = 3
+    // B) 	x = 6      cevap B)
+    //		i = 3
 
-		// C) 	x = 9
-		//		i = 0
+    // C) 	x = 9
+    //		i = 0
 }

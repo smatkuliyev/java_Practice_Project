@@ -4,90 +4,90 @@ import java.util.Scanner;
 
 public class Emlak {
 
-	public int listeNo;
-	public String evTipi;
-	public String il;
-	public int odaSayisi;
-	private double fiyat;
-	public String StokDurumu;
+    public int listeNo;
+    public String evTipi;
+    public String il;
+    public int odaSayisi;
+    private double fiyat;
+    public String StokDurumu;
 
-	public int getListeNo() {
-		return listeNo;
-	}
+    public int getListeNo() {
+        return listeNo;
+    }
 
-	public void setListeNo(int listeNo) {
-		this.listeNo = listeNo;
-	}
+    public void setListeNo(int listeNo) {
+        this.listeNo = listeNo;
+    }
 
-	public String getEvTipi() {
-		return evTipi;
-	}
+    public String getEvTipi() {
+        return evTipi;
+    }
 
-	public void setEvTipi(String evTipi) {
-		this.evTipi = evTipi;
-	}
+    public void setEvTipi(String evTipi) {
+        this.evTipi = evTipi;
+    }
 
-	public String getIl() {
-		return il;
-	}
+    public String getIl() {
+        return il;
+    }
 
-	public void setIl(String il) {
-		this.il = il;
-	}
+    public void setIl(String il) {
+        this.il = il;
+    }
 
-	public int getOdaSayisi() {
-		return odaSayisi;
-	}
+    public int getOdaSayisi() {
+        return odaSayisi;
+    }
 
-	public void setOdaSayisi(int odaSayisi) {
-		this.odaSayisi = odaSayisi;
-	}
+    public void setOdaSayisi(int odaSayisi) {
+        this.odaSayisi = odaSayisi;
+    }
 
-	public double getFiyat() {
-		return fiyat;
-	}
+    public double getFiyat() {
+        return fiyat;
+    }
 
-	public void setFiyat(double fiyat) {
-		this.fiyat = fiyat;
-	}
+    public void setFiyat(double fiyat) {
+        this.fiyat = fiyat;
+    }
 
-	public String getStokDurumu() {
-		return StokDurumu;
-	}
+    public String getStokDurumu() {
+        return StokDurumu;
+    }
 
-	public void setStokDurumu(String StokDurumu) {
-		this.StokDurumu = StokDurumu;
-	}
+    public void setStokDurumu(String StokDurumu) {
+        this.StokDurumu = StokDurumu;
+    }
 
-	@SuppressWarnings("resource")
-	Emlak(int ListeNo, String evTipi, String il, int odaSayisi, double fiyat, String StokDurumu) {
-		
-		Scanner scan = new Scanner(System.in);
-		
-		System.out.println("liste no ");
-		this.listeNo=scan.nextInt();
+    @SuppressWarnings("resource")
+    Emlak(int ListeNo, String evTipi, String il, int odaSayisi, double fiyat, String StokDurumu) {
 
-		System.out.println("Ev tipi");
-		this.evTipi = scan.next ();
+        Scanner scan = new Scanner(System.in);
 
-		System.out.println("Il");
-		this.il = scan.next();
+        System.out.println("liste no ");
+        this.listeNo = scan.nextInt();
 
-		System.out.println("Oda sayisi");
-		this.odaSayisi = scan.nextInt();
+        System.out.println("Ev tipi");
+        this.evTipi = scan.next();
 
-		System.out.println("Fiyat");
-		this.fiyat = scan.nextDouble();
+        System.out.println("Il");
+        this.il = scan.next();
 
-		System.out.println("Stock Durumu");
-		this.StokDurumu = scan.next();
+        System.out.println("Oda sayisi");
+        this.odaSayisi = scan.nextInt();
 
-		//scan.close();
-	}
+        System.out.println("Fiyat");
+        this.fiyat = scan.nextDouble();
 
-	public void ListeleEmlak() {
-		System.out.println("\nListe no      :"+ listeNo +"\nEv tipi    : "+evTipi+"\nil   :"+ il 
-				+"\n oda sayisi : "+odaSayisi+ "\nFiyat : "+fiyat+ "\nStok Durumu : "+StokDurumu);
-	}
+        System.out.println("Stock Durumu");
+        this.StokDurumu = scan.next();
+
+        //scan.close();
+    }
+
+    public void ListeleEmlak() {
+        System.out.println("\nListe no      :" + listeNo + "\nEv tipi    : " + evTipi + "\nil   :" + il
+                + "\n oda sayisi : " + odaSayisi + "\nFiyat : " + fiyat + "\nStok Durumu : " + StokDurumu);
+    }
 
 }

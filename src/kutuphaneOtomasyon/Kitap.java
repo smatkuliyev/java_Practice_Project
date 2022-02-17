@@ -7,12 +7,12 @@ public class Kitap {
     private Yazar yazar;
     private Yayinevi yayinevi;
 
-    public Kitap(String kitapAdi, String kitapIsbnNo, String kitapAciklama,Yazar yazar,Yayinevi yayinevi) {
+    public Kitap(String kitapAdi, String kitapIsbnNo, String kitapAciklama, Yazar yazar, Yayinevi yayinevi) {
         this.kitapAdi = kitapAdi;
         this.kitapIsbnNo = kitapIsbnNo;
         this.kitapAciklama = kitapAciklama;
-        this.yazar=yazar;
-        this.yayinevi=yayinevi;
+        this.yazar = yazar;
+        this.yayinevi = yayinevi;
     }
 
 

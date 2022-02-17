@@ -34,10 +34,10 @@ public class Car extends Runner {
     }
 
 
-   public String arabaMarkasi() {
+    public String arabaMarkasi() {
 
-       return make;
-   }
+        return make;
+    }
 
     public String arabaModeli() {
 

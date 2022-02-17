@@ -2,15 +2,15 @@ package _01_02_Variable_Scanner;
 
 public class C01_Q04 {
 
-	public static void main(String[] args) {
-		System.out.println("-------------------Arttýrma");
+    public static void main(String[] args) {
+        System.out.println("-------------------Arttï¿½rma");
         int a = 1;
-        System.out.println("a : "+(++a)); //2
-        System.out.println("a : "+(a++)); //2
-        System.out.println("a : "+a);  //3
+        System.out.println("a : " + (++a)); //2
+        System.out.println("a : " + (a++)); //2
+        System.out.println("a : " + a);  //3
 
-        a=5;
-        System.out.println("son hali :"+(a++ + ++a)) ;
+        a = 5;
+        System.out.println("son hali :" + (a++ + ++a));
         // 5 + 7 = 12
 
         System.out.println("-------------------Azaltma");
@@ -49,7 +49,7 @@ public class C01_Q04 {
 
         System.out.println("-----------------------------------");
 
-        int k=5;
+        int k = 5;
 
         int sonuc = ++k + k++ + k++ + --k + k-- + k;
         //  6  + 6 +  7   + 7 + 7 + 6 = 39   k=6
@@ -57,6 +57,6 @@ public class C01_Q04 {
         System.out.println("sonuc = " + sonuc);
         System.out.println("k = " + k);
 
-	}
+    }
 
 }

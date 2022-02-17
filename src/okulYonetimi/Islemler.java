@@ -168,7 +168,7 @@ public class Islemler {
             System.out.print("aradiginiz ogrc kimlik No giriniz :");
 
             String araOgrcKimlk = scan.next();
-             scan.next();
+            scan.next();
             for (Kisi k : ogrenciList) {
                 if (k.getKimlikNo().equals(araOgrcKimlk)) {
                     System.out.println("aradiginiz ogrenci : " + k.getAdSoyad());

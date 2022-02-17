@@ -4,18 +4,18 @@ public class _01_NestedLoop {
 
     public static void main(String[] args) {
 
-         //Eger bir dongunun govdesinde diger bir dongu bulunuyorsa,
-         //Bu tur donguler ic-ice donguler olarak bilinir
-         //icteki dongu distaki dongunun her adiminda yeniden calistirilacaktir
-         //Ic ice dongulerde en icteki dongu en once tamamlanir.
-    	
-        for (int i = 1; i <=10 ; i++) {
+        //Eger bir dongunun govdesinde diger bir dongu bulunuyorsa,
+        //Bu tur donguler ic-ice donguler olarak bilinir
+        //icteki dongu distaki dongunun her adiminda yeniden calistirilacaktir
+        //Ic ice dongulerde en icteki dongu en once tamamlanir.
 
-            System.out.println("dis dongu i = "+ i);
+        for (int i = 1; i <= 10; i++) {
 
-            for (int j = 0; j < 5 ; j++) {
+            System.out.println("dis dongu i = " + i);
 
-                System.out.println("ic dongu i ="+ i + " j = "+ j);
+            for (int j = 0; j < 5; j++) {
+
+                System.out.println("ic dongu i =" + i + " j = " + j);
 
             }
 
@@ -24,27 +24,27 @@ public class _01_NestedLoop {
 
         int deger = 0;
 
-        for (int i = 1; i <=10 ; i++) {
+        for (int i = 1; i <= 10; i++) {
 
-            for (int j = 1; j <=5; j++) {
+            for (int j = 1; j <= 5; j++) {
 
-                deger+=1;
+                deger += 1;
             }
         }
         System.out.println("deger = " + deger);
 
 
-         deger=0;
+        deger = 0;
 
-        for (int i = 1; i <=10 ; i++) {                 // i    j   deger
-                                                        // 1    1     1
-            for (int j = 1; j <= i ; j++) {             // 2    1     2
-                deger+=1;                               // 2    2     3
+        for (int i = 1; i <= 10; i++) {                 // i    j   deger
+            // 1    1     1
+            for (int j = 1; j <= i; j++) {             // 2    1     2
+                deger += 1;                               // 2    2     3
             }                                           // 3    1     4
         }                                               // 3    2     5
         System.out.println("deger = " + deger);         // 3    3     6
 
-    // 1+2+3+4+.....+10 =55
+        // 1+2+3+4+.....+10 =55
 
 
     }

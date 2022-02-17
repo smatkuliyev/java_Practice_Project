@@ -14,7 +14,7 @@ public class HashSet04 {
     Cikti--> sonuc = 44.69
      */
     @SuppressWarnings("unused")
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
         HashSet<Double> hs = new HashSet<>();
         double sonuc = toplaminiAl(setOlustur());
@@ -26,6 +26,7 @@ public class HashSet04 {
         HashSet<Double> hs = new HashSet<>(Arrays.asList(3.23, 3.10, 5.12, 10.12, 23.12));
         return hs;
     }
+
     public static double toplaminiAl(HashSet<Double> dhs) {
         double toplam = 0;
         for (double d : dhs) {

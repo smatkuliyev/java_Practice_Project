@@ -1,7 +1,7 @@
 package aracKiralama;
 
 public class AracTalebi {
-    public AracTalebi(){
+    public AracTalebi() {
 
     }
 

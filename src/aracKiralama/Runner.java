@@ -2,7 +2,7 @@ package aracKiralama;
 
 public class Runner {
     @SuppressWarnings("static-access")
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         MusteriVeArabaBilgisiGirisi veriGirisi = new MusteriVeArabaBilgisiGirisi();
         veriGirisi.aracTalep();
         veriGirisi.arabalar();

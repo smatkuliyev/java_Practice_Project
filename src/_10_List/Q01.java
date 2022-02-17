@@ -14,21 +14,21 @@ public class Q01 {
          * INPUT : list1={"Ali","Veli","Ayse","Fatma","Omer"}
          * OUTPUT : [Veli,Omer]
          */
-    	
-    	List<String> list1= new ArrayList<>(Arrays.asList("Ali","Veli","Ayse","Fatma","Omer"));
-    	
-    	List<String> list2= new ArrayList<>();
-    	
-    	for (String each : list1) {
-			
-    		if (!each.toLowerCase().contains("a")) {
-    			list2.add(each);
-			} 
-    		
-		}
-    	
-    	System.out.println(list2);
-  	
+
+        List<String> list1 = new ArrayList<>(Arrays.asList("Ali", "Veli", "Ayse", "Fatma", "Omer"));
+
+        List<String> list2 = new ArrayList<>();
+
+        for (String each : list1) {
+
+            if (!each.toLowerCase().contains("a")) {
+                list2.add(each);
+            }
+
+        }
+
+        System.out.println(list2);
+
     }
 
 }

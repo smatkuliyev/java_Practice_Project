@@ -6,7 +6,7 @@ public class Yayinevi {
 
 
     public String yayineviBilgileri() {
-       return  "Yayinevi\n" +
+        return "Yayinevi\n" +
                 "yayineviAdi = " + yayineviAdi + '\n' +
                 "yayineviAdresi = " + yayineviAdresi + '\n' +
                 '}';

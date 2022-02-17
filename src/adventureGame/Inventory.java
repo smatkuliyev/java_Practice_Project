@@ -1,78 +1,76 @@
 package adventureGame;
 
 public class Inventory {
-	
-	private boolean water, food, firewood;
-	private String wName, aName;
-	private int damage, armour;
-	
-	public Inventory() {
-		this.water = false;
-		this.food = false;
-		this.firewood = false;
-		this.armour = 0;
-		this.damage = 0;
-		this.aName = null;
-		this.wName = null;
-	}
 
-	public boolean isWater() {
-		return water;
-	}
+    private boolean water, food, firewood;
+    private String wName, aName;
+    private int damage, armour;
 
-	public void setWater(boolean water) {
-		this.water = water;
-	}
+    public Inventory() {
+        this.water = false;
+        this.food = false;
+        this.firewood = false;
+        this.armour = 0;
+        this.damage = 0;
+        this.aName = null;
+        this.wName = null;
+    }
 
-	public boolean isFood() {
-		return food;
-	}
+    public boolean isWater() {
+        return water;
+    }
 
-	public void setFood(boolean food) {
-		this.food = food;
-	}
+    public void setWater(boolean water) {
+        this.water = water;
+    }
 
-	public boolean isFirewood() {
-		return firewood;
-	}
+    public boolean isFood() {
+        return food;
+    }
 
-	public void setFirewood(boolean firewood) {
-		this.firewood = firewood;
-	}
+    public void setFood(boolean food) {
+        this.food = food;
+    }
 
-	public String getwName() {
-		return wName;
-	}
+    public boolean isFirewood() {
+        return firewood;
+    }
 
-	public void setwName(String wName) {
-		this.wName = wName;
-	}
+    public void setFirewood(boolean firewood) {
+        this.firewood = firewood;
+    }
 
-	public String getaName() {
-		return aName;
-	}
+    public String getwName() {
+        return wName;
+    }
 
-	public void setaName(String aName) {
-		this.aName = aName;
-	}
+    public void setwName(String wName) {
+        this.wName = wName;
+    }
 
-	public int getDamage() {
-		return damage;
-	}
+    public String getaName() {
+        return aName;
+    }
 
-	public void setDamage(int damage) {
-		this.damage = damage;
-	}
+    public void setaName(String aName) {
+        this.aName = aName;
+    }
 
-	public int getArmour() {
-		return armour;
-	}
+    public int getDamage() {
+        return damage;
+    }
 
-	public void setArmour(int armour) {
-		this.armour = armour;
-	}
+    public void setDamage(int damage) {
+        this.damage = damage;
+    }
 
-	
-	
-	
+    public int getArmour() {
+        return armour;
+    }
+
+    public void setArmour(int armour) {
+        this.armour = armour;
+    }
+
+
 }

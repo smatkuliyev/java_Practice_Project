@@ -4,31 +4,31 @@ import java.util.Scanner;
 
 public class Q14 {
 
-	public static void main(String[] args) {
-		  /*  Problem Tanýmý
-        Verilen bir sayýnýn faktöriyelini özyineli (recursive) olarak
-        hespalayan fonksiyonu yazýnýz.
-        Örnek Ekran Çýktýlarý
+    public static void main(String[] args) {
+		  /*  Problem Tanï¿½mï¿½
+        Verilen bir sayï¿½nï¿½n faktï¿½riyelini ï¿½zyineli (recursive) olarak
+        hespalayan fonksiyonu yazï¿½nï¿½z.
+        ï¿½rnek Ekran ï¿½ï¿½ktï¿½larï¿½
         Bir sayi giriniz: 6
-        Faktöriyeli: 720
-        Bir sayý giriniz: 3
-        Faktöriyeli 6
+        Faktï¿½riyeli: 720
+        Bir sayï¿½ giriniz: 3
+        Faktï¿½riyeli 6
      */
-		Scanner scan = new Scanner(System.in);
-		System.out.print("Bir sayi giriniz : ");
-		int sayi = scan.nextInt();
-		
-		int factorial = 1;
-		System.out.print(sayi + " sayisini faktoriyali : " + sayi);
-		
-		while (sayi>1) {
-			factorial*=sayi;
-			sayi--;
-			System.out.print("*" + sayi);
-		}
-		System.out.print(" = " +factorial);
-		
-		scan.close();
-	}
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Bir sayi giriniz : ");
+        int sayi = scan.nextInt();
+
+        int factorial = 1;
+        System.out.print(sayi + " sayisini faktoriyali : " + sayi);
+
+        while (sayi > 1) {
+            factorial *= sayi;
+            sayi--;
+            System.out.print("*" + sayi);
+        }
+        System.out.print(" = " + factorial);
+
+        scan.close();
+    }
 
 }

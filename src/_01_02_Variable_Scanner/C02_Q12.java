@@ -4,30 +4,30 @@ import java.util.Scanner;
 
 public class C02_Q12 {
 
-	public static void main(String[] args) {
-        /*  Problem Tanýmý
-        Bir iþçinin iþi bitirme süresini ve toplam iþçi sayýsýný alarak, iþin bitme süresini
-        hesaplayan kodu yazýnýz.
-        Örneðin, Bir iþçi bir iþi 10 günde yapabilmektedir.
-        Buna göre 2 iþçi ayný iþi kaç günde yapar?
-        Örnek Ekran Çýktýsý
-        Bir iþçi iþi kaç günde bitirmektedir? 10
-        Toplam kaç iþçi çalýþacak? 2
-        Ýþin bitme süresi 5 gündür.                                   */
-    
-    Scanner scan = new Scanner(System.in);
-    
-    System.out.print("Is adamsaat suresini giriniz : ");
-    double adamsaat = scan.nextDouble();
-    
-    System.out.print("Isci sayisini giriniz : ");
-    int isci = scan.nextInt();
-    
-    System.out.println("Isin bitme suresi " + (adamsaat / isci) + " saatttir");
-    
-    
-    scan.close();
+    public static void main(String[] args) {
+        /*  Problem Tanï¿½mï¿½
+        Bir iï¿½ï¿½inin iï¿½i bitirme sï¿½resini ve toplam iï¿½ï¿½i sayï¿½sï¿½nï¿½ alarak, iï¿½in bitme sï¿½resini
+        hesaplayan kodu yazï¿½nï¿½z.
+        ï¿½rneï¿½in, Bir iï¿½ï¿½i bir iï¿½i 10 gï¿½nde yapabilmektedir.
+        Buna gï¿½re 2 iï¿½ï¿½i aynï¿½ iï¿½i kaï¿½ gï¿½nde yapar?
+        ï¿½rnek Ekran ï¿½ï¿½ktï¿½sï¿½
+        Bir iï¿½ï¿½i iï¿½i kaï¿½ gï¿½nde bitirmektedir? 10
+        Toplam kaï¿½ iï¿½ï¿½i ï¿½alï¿½ï¿½acak? 2
+        ï¿½ï¿½in bitme sï¿½resi 5 gï¿½ndï¿½r.                                   */
 
-	}
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Is adamsaat suresini giriniz : ");
+        double adamsaat = scan.nextDouble();
+
+        System.out.print("Isci sayisini giriniz : ");
+        int isci = scan.nextInt();
+
+        System.out.println("Isin bitme suresi " + (adamsaat / isci) + " saatttir");
+
+
+        scan.close();
+
+    }
 
 }

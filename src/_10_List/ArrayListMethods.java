@@ -7,8 +7,8 @@ import java.util.List;
 
 public class ArrayListMethods {
 
-	@SuppressWarnings({ "unused", "serial", "unlikely-arg-type" })
-	public static void main(String[] args) {
+    @SuppressWarnings({"unused", "serial", "unlikely-arg-type"})
+    public static void main(String[] args) {
 		/*
 	     Array List genel Tanimi:
 
@@ -16,17 +16,17 @@ public class ArrayListMethods {
 	            List<Type> arrayListName = new ArrayList<>();
 
 	             1. Type : String, Integer, Double, Long, Byte, Short, Boolean, Object, .... seklinde olmalidir
-	                - ArrayList<int> hatali bir tanimlamadir. wrapper class dedigimiz object türünden olmalidir
-	                - primitivelerin wrapper classlari Büyük harflar baslayan isimleridir
+	                - ArrayList<int> hatali bir tanimlamadir. wrapper class dedigimiz object tï¿½rï¿½nden olmalidir
+	                - primitivelerin wrapper classlari Bï¿½yï¿½k harflar baslayan isimleridir
 	                - int'n wrapper class'i        --> Integer'dir
 	                - double'un wrapper class'i    --> Double'dir. vs...
 
 	            2.  - Arrayler tanimlanirken sabit bir .length;'de tanimlanir ve bu length degistirilemez
 	                - ArrayList'ler tanimlamada .size(); belirmeme zorunlulugu yoktur degistirilebilir.
-	            3.  Intellij sonda bos biralikan <> yerine <~> seklinde ifade yazabilir bu ifade tanimdaki tür ile ayni anlamindadir.
+	            3.  Intellij sonda bos biralikan <> yerine <~> seklinde ifade yazabilir bu ifade tanimdaki tï¿½r ile ayni anlamindadir.
 
-	    List declarations(tanýmlama) :
-	    Array den farki boyut esnekleðidir.Array'lerde length sabittir, degistirilemez. ArrayList'lerde (List) length esnektir.
+	    List declarations(tanï¿½mlama) :
+	    Array den farki boyut esnekleï¿½idir.Array'lerde length sabittir, degistirilemez. ArrayList'lerde (List) length esnektir.
 	          Siz eleman ekledikce List length'ini artirir, siz eleman sildikce List length'ini azaltir.
 
 
@@ -34,269 +34,269 @@ public class ArrayListMethods {
 
 	    List'e assaign etme(atama) :
 	    List'ler data type olarak primitive'leri kabul etmez. Primitive'lerde data type'ini non-primitive yapmak icin wrapper class'lari kullaniriz.
-	    List<wrapper Class> name = new List<>()      *****yanlýþþþþþþþ (<> :jenerik wrapper Class dan parametre alýr.)
-	    List<wrapper Class> name = new ArrayList<>() *****doðru
-	    List<wrapper Class> name = new ArrayList<Wrapper Class>() *****doðru
-	    ArrayList<wrapper Class> name = new ArrayList<>()  *****yanlýþþþþþþþ
+	    List<wrapper Class> name = new List<>()      *****yanlï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (<> :jenerik wrapper Class dan parametre alï¿½r.)
+	    List<wrapper Class> name = new ArrayList<>() *****doï¿½ru
+	    List<wrapper Class> name = new ArrayList<Wrapper Class>() *****doï¿½ru
+	    ArrayList<wrapper Class> name = new ArrayList<>()  *****yanlï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-	    List'e ilk deðer atama (initialize):....
+	    List'e ilk deï¿½er atama (initialize):....
 	    1.yol : asList();
-	    ArrayList<Integer> sayý= new ArrayList<>(Arrays.asList(1,2,3)) demek 1,2,3 elemanlarini array olarak al demektir.
+	    ArrayList<Integer> sayï¿½= new ArrayList<>(Arrays.asList(1,2,3)) demek 1,2,3 elemanlarini array olarak al demektir.
 	    2.yol : Listof();
 	    ArrayList<String> ulkeler= new ArrayList<String>( List.of("Almanya", "Fransa", "Ingiltere", "Ispanya", "Italya") );
 
-	    ArrayList ler array'lerin aksine direkt olarak ekrana yazdirilabilirler-->  print için:  System.out.println(name);
+	    ArrayList ler array'lerin aksine direkt olarak ekrana yazdirilabilirler-->  print iï¿½in:  System.out.println(name);
 	    Array'ler Arrayy.toString(arrayAdi); ile yazdirilabilir.
 
 
-	    Collections ==> Bir araya getirilmis parcalar anlamýna gelir. ArrayList, Set, Map ler java collections sýnýfý nesneleridir.
+	    Collections ==> Bir araya getirilmis parcalar anlamï¿½na gelir. ArrayList, Set, Map ler java collections sï¿½nï¿½fï¿½ nesneleridir.
 
 	 */
-	        System.out.println("******** List tanýmlama ilk dðer atama(initialize)*********");
-	        //1. yol :
-	        List<Integer> listSayilar = new ArrayList<>();
-	        listSayilar.add(1);
-	        listSayilar.add(23);
-	        listSayilar.add(35);
-	        listSayilar.add(17);
+        System.out.println("******** List tanï¿½mlama ilk dï¿½er atama(initialize)*********");
+        //1. yol :
+        List<Integer> listSayilar = new ArrayList<>();
+        listSayilar.add(1);
+        listSayilar.add(23);
+        listSayilar.add(35);
+        listSayilar.add(17);
 
-	        //2.yol :
-	        List<String> listIsimler = new ArrayList<>(Arrays.asList("Reha", "hakan", "haluk", "ahsen", "ZEHRA", "CEMAL"));// daha pratik
+        //2.yol :
+        List<String> listIsimler = new ArrayList<>(Arrays.asList("Reha", "hakan", "haluk", "ahsen", "ZEHRA", "CEMAL"));// daha pratik
 
-	        //3. yol :
-	       ArrayList<String> listUlkeler = new ArrayList<>(List.of("Almanya", "Fransa", "Ingiltere", "Ispanya", "Italya"));
+        //3. yol :
+        ArrayList<String> listUlkeler = new ArrayList<>(List.of("Almanya", "Fransa", "Ingiltere", "Ispanya", "Italya"));
 
-	        System.out.println("listIsimler : " + listIsimler);
-	        System.out.println("listSayilar :" + listSayilar);
-	        System.out.println("listUlkeler : " + listUlkeler + "\n");
+        System.out.println("listIsimler : " + listIsimler);
+        System.out.println("listSayilar :" + listSayilar);
+        System.out.println("listUlkeler : " + listUlkeler + "\n");
 
-	        System.out.println("******** List'e eleman ekleme : add() *********");
+        System.out.println("******** List'e eleman ekleme : add() *********");
 
-	        //List e eleman ekleme metodu: name.add(eleman);ekleme yapýlan eleman list in sürekli sonuna eklenir. list elemanlarýnda tekrar olabir.
+        //List e eleman ekleme metodu: name.add(eleman);ekleme yapï¿½lan eleman list in sï¿½rekli sonuna eklenir. list elemanlarï¿½nda tekrar olabir.
 
-	        listSayilar.add(-123);
-	        System.out.println(listSayilar);
-	        //index (yer) belirterek eleman ekleme :name.add(index,eleman);
-	        listSayilar.add(2, 33);// git þuraya ÞU elemaný koy: 2. index e 33 koy.2. index ten sonrakilerin sýrasý bir ilerledi.
-	        System.out.println("2. index'e 33 eklendi " + listSayilar + "\n");
+        listSayilar.add(-123);
+        System.out.println(listSayilar);
+        //index (yer) belirterek eleman ekleme :name.add(index,eleman);
+        listSayilar.add(2, 33);// git ï¿½uraya ï¿½U elemanï¿½ koy: 2. index e 33 koy.2. index ten sonrakilerin sï¿½rasï¿½ bir ilerledi.
+        System.out.println("2. index'e 33 eklendi " + listSayilar + "\n");
 
-	        System.out.println("******** Özel bir metod:Collections nCopies kullanimi... *********");
-	        // Özel bir metod:Collections nCopies kullanimi...
-	        // nCopies(int n, Object o);  n elemanli nums arrayi olusturur ve hepsini o ile doldurur
-	        // Collection.fill(List, o); ise tanimlanmis ve deger atanmis arrayList'in tüm elemanlarini o ile doldurur
-	        ArrayList<Integer> nums = new ArrayList<>(Collections.nCopies(10, 5));
-	        System.out.println("nums : 10 tane 5 den oluþan arrayList :" + nums + "\n");//[5,5,5,5,5,5,5,5,5,5] 10 tane 5 den oluþan arrayList
+        System.out.println("******** ï¿½zel bir metod:Collections nCopies kullanimi... *********");
+        // ï¿½zel bir metod:Collections nCopies kullanimi...
+        // nCopies(int n, Object o);  n elemanli nums arrayi olusturur ve hepsini o ile doldurur
+        // Collection.fill(List, o); ise tanimlanmis ve deger atanmis arrayList'in tï¿½m elemanlarini o ile doldurur
+        ArrayList<Integer> nums = new ArrayList<>(Collections.nCopies(10, 5));
+        System.out.println("nums : 10 tane 5 den oluï¿½an arrayList :" + nums + "\n");//[5,5,5,5,5,5,5,5,5,5] 10 tane 5 den oluï¿½an arrayList
 
-	        System.out.println("******** Özel bir metod: addAll(Collection C) *********");/*
+        System.out.println("******** ï¿½zel bir metod: addAll(Collection C) *********");/*
 	            addAll(Collection C)
-	            # ArrayList'e verilen C yi (ArrayList ya da Collections'un diger arrayleri (daha sonra görülecek)) sona ekler
+	            # ArrayList'e verilen C yi (ArrayList ya da Collections'un diger arrayleri (daha sonra gï¿½rï¿½lecek)) sona ekler
 
 	            addAll(int index, Collection C)
 	            # ArrayList'e verilen C yi (ArrayList ya da Collections'un diger arrayleri)  belirtilen indexten itibaren ekler
 	            # arrayin kalan elemanlarini kaydirir
 	         */
 
-	        // ArrayList listRakam tanimlanip, initialize ediliyor. Arrays.asList() ile
-	        ArrayList<Integer> listRakam = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));
+        // ArrayList listRakam tanimlanip, initialize ediliyor. Arrays.asList() ile
+        ArrayList<Integer> listRakam = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));
 
-	        // ArrayList listIkiBasamakli tanimlanip, initialize ediliyor. Arrays.asList() ile
-	        ArrayList<Integer> listIkiBasamakli = new ArrayList<>(List.of(10, 20, 30, 40, 50));
+        // ArrayList listIkiBasamakli tanimlanip, initialize ediliyor. Arrays.asList() ile
+        ArrayList<Integer> listIkiBasamakli = new ArrayList<>(List.of(10, 20, 30, 40, 50));
 
-	        // ArrayList listRakam2 tanimlanip, initializer icinde initialize ediliyor
-	        ArrayList<Integer> listRakam2 = new ArrayList<>() {
-	            {
-	                for (int i = 0; i < 10; i++) {
-	                    add(i);
-	                }
-	            }
-	        };
+        // ArrayList listRakam2 tanimlanip, initializer icinde initialize ediliyor
+        ArrayList<Integer> listRakam2 = new ArrayList<>() {
+            {
+                for (int i = 0; i < 10; i++) {
+                    add(i);
+                }
+            }
+        };
 
-	        // listRakam yazdirliliyor
-	        System.out.println("listRakam : " + listRakam);
+        // listRakam yazdirliliyor
+        System.out.println("listRakam : " + listRakam);
 
-	        // listIkiBasamakli elemanlari listRakam'e ekleniyor
-	        listRakam.addAll(listIkiBasamakli);
+        // listIkiBasamakli elemanlari listRakam'e ekleniyor
+        listRakam.addAll(listIkiBasamakli);
 
-	        // ArrayList ekrana yazdiriliyor
-	        System.out.println("listIkiBasamakli'nin sona eklenmis hali");
-	        System.out.println("listRakam ListIkiBasamaklý eklenmiþ hali : " + listRakam);
-
-
-	        // listIkiBasamakli elemanlari listRakam'e 3. index ten sonra ekleniyor.
-	        listRakam.addAll(3, listIkiBasamakli);
-
-	        // ArrayList ekrana yazdiriliyor
-	        System.out.println("listIkiBasamakli'nýn 3.indexten itibaren listRakam'a eklenmis hali" + listRakam + "\n");
-
-	        System.out.println("******** List'in içinden istenen index'teki elemaný alma : get() *********");
-	        listIsimler.get(2);//listIsimler içinde 2. index teki eleman haluk alýndý.
-	        System.out.println("listIsimler'den 2. index teki eleman haluk alýndý : " + listIsimler.get(2) + "\n");
-
-	        System.out.println("******** List'in boyutunu bulma : size() *********");
-	        //List in boyutu: size: name.size();--> listedeki  eleman sayýsýný verir.
-	        System.out.println("listSayilar'in eleman sayýsý : " + listSayilar.size() + "\n");// 6
-
-	        System.out.println("******** List'in istenen elemanýný silme : remove() *********");
-
-	        //List  ten istenen bir elemaný silme : name.remove();--> þu elemaný sil kaldýr.
-	        listSayilar.remove(3);//3. index teki elemaný sil
-	        listIsimler.remove("haluk");//isimler list inden haluk sil
-	        System.out.println("listSayilar 3. index teki elemaný silindi : " + listSayilar);
-	        System.out.println(listSayilar.remove("-123"));// false:
-	        System.out.println(listIsimler);
-	        System.out.println(listIsimler.remove("haluk"));//false
+        // ArrayList ekrana yazdiriliyor
+        System.out.println("listIkiBasamakli'nin sona eklenmis hali");
+        System.out.println("listRakam ListIkiBasamaklï¿½ eklenmiï¿½ hali : " + listRakam);
 
 
-	        //tekrarlý eleman varsa ilk index dekini siler...
-	        listIsimler.add("Reha");
-	        System.out.println("listIsimler'in sonuna Reha eklanmiþ hali : " + listIsimler);//sona Reha eklenmiþ hali
-	        listIsimler.remove("Reha");
-	        System.out.println("listIsimler'de bulduðu ilk reha'yý silindi : " + listIsimler);//bulduðu ilk Reha yý silmiþ hali.
+        // listIkiBasamakli elemanlari listRakam'e 3. index ten sonra ekleniyor.
+        listRakam.addAll(3, listIkiBasamakli);
 
-	        //olmayan elemaný silmek için eror vermez...kod çalýþýr....
-	        listIsimler.remove("haluk");//haluk varsa siler yoksa hata vermeden kod devam eder.
-	        System.out.println(listIsimler.remove("haluk"));// isimler obj haluk kaldýrmaya gider olmayan elemandan dolayý false verir.
-	        System.out.println(listIsimler + "\n");
+        // ArrayList ekrana yazdiriliyor
+        System.out.println("listIkiBasamakli'nï¿½n 3.indexten itibaren listRakam'a eklenmis hali" + listRakam + "\n");
 
-	        System.out.println("******** List'te herhangi bir elemanýn index(yerini) bulma : indexOf() *********");
-	        System.out.println("indexOf ZEHRA sonrasý :" + listIsimler.indexOf("ZEHRA"));//3 -->ZEHRA 3. index te
-	        System.out.println("indexOf haluk sonrasý :" + listIsimler.indexOf("haluk"));//-1 -->haluk isimler list inde olmadýðý için.olmayan elemanýn index i sorguladýðýnda error vermez run:-1 verir
+        System.out.println("******** List'in iï¿½inden istenen index'teki elemanï¿½ alma : get() *********");
+        listIsimler.get(2);//listIsimler iï¿½inde 2. index teki eleman haluk alï¿½ndï¿½.
+        System.out.println("listIsimler'den 2. index teki eleman haluk alï¿½ndï¿½ : " + listIsimler.get(2) + "\n");
 
-	        Collections.sort(listSayilar);   //list elemanlarýný sýraladýk
-	        System.out.println("listSayilar'da 48'in indexOf sonrasý :" + listSayilar.indexOf(48) + "\n");//list içinde 48 elemanýnýn index i soruldu 48 elemsný listte olmadýðý için -1 verdi
+        System.out.println("******** List'in boyutunu bulma : size() *********");
+        //List in boyutu: size: name.size();--> listedeki  eleman sayï¿½sï¿½nï¿½ verir.
+        System.out.println("listSayilar'in eleman sayï¿½sï¿½ : " + listSayilar.size() + "\n");// 6
 
-	        System.out.println("******** List'te herhangi bir elemanýn son bulma index(yerini) bulma : lastIndexOf() *********");
-	        // lastIndexOf(Object O):Belirtilen elemanin son bulunma index'ini verir, eleman yoksa -1 döner.
-	        ArrayList<Integer> tekrarlilist = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 2, 7, 8, 9));
-	        System.out.println("2 elemanýnýn listede son bulunduðu yerin index'i :" + tekrarlilist.lastIndexOf(2) + "\n");//5 : 2 den ikincisinin yani sonuncusunun baþtan index'i
+        System.out.println("******** List'in istenen elemanï¿½nï¿½ silme : remove() *********");
 
-
-	        System.out.println("******** list teki istenen hehangi bir  elemaný update etme :set() *********");
+        //List  ten istenen bir elemanï¿½ silme : name.remove();--> ï¿½u elemanï¿½ sil kaldï¿½r.
+        listSayilar.remove(3);//3. index teki elemanï¿½ sil
+        listIsimler.remove("haluk");//isimler list inden haluk sil
+        System.out.println("listSayilar 3. index teki elemanï¿½ silindi : " + listSayilar);
+        System.out.println(listSayilar.remove("-123"));// false:
+        System.out.println(listIsimler);
+        System.out.println(listIsimler.remove("haluk"));//false
 
 
-	        //list teki istenen hehabgi bir  elemaný update (set) etme: name.set(index,eleman);--> þu index deki elemaný þu eleman ile deðiþtir.
-	        listIsimler.set(0, "ahmet");
-	        System.out.println("listIsimler'de 0. inex' ahmet set edildi : " + listIsimler + "\n");
-	        //  isimler.set(0,"ahmet",1,"ali");-->list te çoklu set metodu çalýþmaz.buz gibi ÝNTERVÝEW sorusu....
+        //tekrarlï¿½ eleman varsa ilk index dekini siler...
+        listIsimler.add("Reha");
+        System.out.println("listIsimler'in sonuna Reha eklanmiï¿½ hali : " + listIsimler);//sona Reha eklenmiï¿½ hali
+        listIsimler.remove("Reha");
+        System.out.println("listIsimler'de bulduï¿½u ilk reha'yï¿½ silindi : " + listIsimler);//bulduï¿½u ilk Reha yï¿½ silmiï¿½ hali.
 
-	        System.out.println("******** list teki istenen hehangi bir parçasýný alma :subList(int fromIndex, int toIndex) *********");
+        //olmayan elemanï¿½ silmek iï¿½in eror vermez...kod ï¿½alï¿½ï¿½ï¿½r....
+        listIsimler.remove("haluk");//haluk varsa siler yoksa hata vermeden kod devam eder.
+        System.out.println(listIsimler.remove("haluk"));// isimler obj haluk kaldï¿½rmaya gider olmayan elemandan dolayï¿½ false verir.
+        System.out.println(listIsimler + "\n");
+
+        System.out.println("******** List'te herhangi bir elemanï¿½n index(yerini) bulma : indexOf() *********");
+        System.out.println("indexOf ZEHRA sonrasï¿½ :" + listIsimler.indexOf("ZEHRA"));//3 -->ZEHRA 3. index te
+        System.out.println("indexOf haluk sonrasï¿½ :" + listIsimler.indexOf("haluk"));//-1 -->haluk isimler list inde olmadï¿½ï¿½ï¿½ iï¿½in.olmayan elemanï¿½n index i sorguladï¿½ï¿½ï¿½nda error vermez run:-1 verir
+
+        Collections.sort(listSayilar);   //list elemanlarï¿½nï¿½ sï¿½raladï¿½k
+        System.out.println("listSayilar'da 48'in indexOf sonrasï¿½ :" + listSayilar.indexOf(48) + "\n");//list iï¿½inde 48 elemanï¿½nï¿½n index i soruldu 48 elemsnï¿½ listte olmadï¿½ï¿½ï¿½ iï¿½in -1 verdi
+
+        System.out.println("******** List'te herhangi bir elemanï¿½n son bulma index(yerini) bulma : lastIndexOf() *********");
+        // lastIndexOf(Object O):Belirtilen elemanin son bulunma index'ini verir, eleman yoksa -1 dï¿½ner.
+        ArrayList<Integer> tekrarlilist = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 2, 7, 8, 9));
+        System.out.println("2 elemanï¿½nï¿½n listede son bulunduï¿½u yerin index'i :" + tekrarlilist.lastIndexOf(2) + "\n");//5 : 2 den ikincisinin yani sonuncusunun baï¿½tan index'i
+
+
+        System.out.println("******** list teki istenen hehangi bir  elemanï¿½ update etme :set() *********");
+
+
+        //list teki istenen hehabgi bir  elemanï¿½ update (set) etme: name.set(index,eleman);--> ï¿½u index deki elemanï¿½ ï¿½u eleman ile deï¿½iï¿½tir.
+        listIsimler.set(0, "ahmet");
+        System.out.println("listIsimler'de 0. inex' ahmet set edildi : " + listIsimler + "\n");
+        //  isimler.set(0,"ahmet",1,"ali");-->list te ï¿½oklu set metodu ï¿½alï¿½ï¿½maz.buz gibi ï¿½NTERVï¿½EW sorusu....
+
+        System.out.println("******** list teki istenen hehangi bir parï¿½asï¿½nï¿½ alma :subList(int fromIndex, int toIndex) *********");
 	        /*
 	            subList(int fromIndex, int toIndex)
 	            Returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
 
 	         */
-	        // ArrayList list tanimlanip, initialize ediliyor. Arrays.toList() ile
-	        ArrayList<Integer> listParcasi = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));
+        // ArrayList list tanimlanip, initialize ediliyor. Arrays.toList() ile
+        ArrayList<Integer> listParcasi = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));
 
-	        System.out.println(listParcasi);
+        System.out.println(listParcasi);
 
-	        // list.subList(2,5); 2. index dahil, 5. index haric
-	        System.out.println("2. index dahil, 5. index haric parcasý alýndu : " + listParcasi.subList(2, 5));//2. 3. 4. elemaný alýr. 5 . eleman alýnmaz
+        // list.subList(2,5); 2. index dahil, 5. index haric
+        System.out.println("2. index dahil, 5. index haric parcasï¿½ alï¿½ndu : " + listParcasi.subList(2, 5));//2. 3. 4. elemanï¿½ alï¿½r. 5 . eleman alï¿½nmaz
 
-	        // yeni bir yeniList arrayList'i list.subList() ile de tanimlanabilir
-	        ArrayList<Integer> yeniList = new ArrayList<>(listParcasi.subList(4, 8));
+        // yeni bir yeniList arrayList'i list.subList() ile de tanimlanabilir
+        ArrayList<Integer> yeniList = new ArrayList<>(listParcasi.subList(4, 8));
 
-	        System.out.println("list.subList(4,8) ile yeniList tanimlandi : " + yeniList + "\n");
-
-
-	        System.out.println("******** list'in boþ dolu olduðunu öðreneme : isEmpty() *********");
-	        //list in boþ-dolu sorgusu: isEmpty :name.isempty(); --> name listi boþ mu deðil mi? true-false verir.
-	        System.out.println(listIsimler.isEmpty() + "\n");//false
+        System.out.println("list.subList(4,8) ile yeniList tanimlandi : " + yeniList + "\n");
 
 
-	        System.out.println("******** List te istenen eleman var mý yok mu?öðrenme : contains() *********");
-
-	        // List'te istenen eleman var mý yok mu?: contains: name.contains(eleman); -->true-false
-	        System.out.println("listIsimler'de ipek elamaný var mý? : " + listIsimler.contains("ipek") + "\n");//false ipek yok
-
-	        System.out.println("******** List'teki elemanlarý düzenli sýralama : Collections.sort() *********");
-
-	        // List  teki elemanlarý düzenli sýralama :String:alfabetik(Natural Order), int:küçükten büyüðe...Collections.sort(name);
-
-	        Collections.sort(listIsimler);//String sýrasý
-	        System.out.println("listIsimler'de harf sýrasý  : " + listIsimler);
-
-	        Collections.sort(listSayilar);//int sýrasý
-	        System.out.println("listSayilar'da küçükten büyüge elemanlarýn sýrasý : " + listSayilar + "\n");
-
-	        //***Önemli*** System.out.println( Collections.sort(list)); -->þeklinde metod print içinde çalýþmaz
-
-	        System.out.println("******** List'teki elemanlarý düzenli tersten sýralama : Collections.reverse() *********");
-	        Collections.reverse(listSayilar);
-	        System.out.println("listSayilar'daki elemanlarý düzenli tersten sýralamasý  = " + listSayilar + "\n");
-
-	        ArrayList<Integer> ipek = new ArrayList<>(Arrays.asList(45, 23, 67, -100, 1, 0));
-	        System.out.println("ilk hali: reverse olmadan : "+ipek);
-	        Collections.reverse(ipek);
-	        System.out.println("reverse hali : "+ipek);
-
-	        //****ÇOOOK ÖNEMLÝ Süleyman hoca bile yanlýþ anlattý....Collections.reverse()--> methodu listteki elemanlarý index sýrasýna göre tersten sýralar.
-
-	        System.out.println("******** List'teki elemanlarý max min elemanýný bulma : Collections.max/min() *********");
-	        System.out.println("listSayilar deki en büyük sayý = " + Collections.max(listSayilar));
-	        System.out.println("listSayilar deki en küçük sayý = " + Collections.min(listSayilar) + "\n");
-
-	        System.out.println("******** List'teki belli bir deðerdeki elemanlara , baþka bir deðer atama : Collections.replaceAll() *********");
-	        // belli bir deðerdeki elemanlarý , baþka bir deðer atar
-	        Collections.replaceAll(listSayilar, 33, 9);
-	        System.out.println("listSayilar'da 33 deðerindeki elemanlara 9 deðeri atandý  = " + listSayilar + "\n");
-
-	        System.out.println("******** List'teki elemanlara ayný deðeri atama : Collections.fill() *********");
-	        Collections.fill(listSayilar, 8);
-	        System.out.println("listSayilar'a tüm elemanlara 8 atanadý = " + listSayilar + "\n");
+        System.out.println("******** list'in boï¿½ dolu olduï¿½unu ï¿½ï¿½reneme : isEmpty() *********");
+        //list in boï¿½-dolu sorgusu: isEmpty :name.isempty(); --> name listi boï¿½ mu deï¿½il mi? true-false verir.
+        System.out.println(listIsimler.isEmpty() + "\n");//false
 
 
-	        System.out.println("******** iki list'in eþitliðini bulma : equals() *********");
-	        //Equals :eþit mi deðil mi: name1.equals(name2);--> name1 name2 týpatýp ayný mý? list teki elemanlarýn hem index hem de içeriðini ayný olmalý
+        System.out.println("******** List te istenen eleman var mï¿½ yok mu?ï¿½ï¿½renme : contains() *********");
 
-	        List<String> name1 = new ArrayList<>(Arrays.asList("a", "b"));
-	        List<String> name2 = new ArrayList<>(Arrays.asList("b", "a"));
-	        List<String> name3 = new ArrayList<>(Arrays.asList("A", "b"));
-	        List<String> name4 = new ArrayList<>(Arrays.asList("A", "b"));
-	        System.out.println(name1.equals(name2));// name1  name2 ile týpatýp ayný? -->false
-	        System.out.println(name1.equals(name3));// name1  name3 ile týpatýp ayný? -->false
-	        System.out.println(name3.equals(name4) + "\n");// name3  name4 ile týpatýp ayný? -->true
+        // List'te istenen eleman var mï¿½ yok mu?: contains: name.contains(eleman); -->true-false
+        System.out.println("listIsimler'de ipek elamanï¿½ var mï¿½? : " + listIsimler.contains("ipek") + "\n");//false ipek yok
 
-	        System.out.println("******** list'i Array'a çevirme : toArray() *********");
+        System.out.println("******** List'teki elemanlarï¿½ dï¿½zenli sï¿½ralama : Collections.sort() *********");
 
-	        //list'i Array'a çevirme : toArray();
-	        //1. Yontem: toArray() methodu'nun icinde parametre olarak new String[0] kullaniniz
-	        String arr[] = listIsimler.toArray(new String[0]);//arr adýnda String tipinde bir array tanýmladýk.isimlerden(List) toArray ile yeni String tipi obj deðerleri atadýk
-	        System.out.println("listIsimler'in array hali: "+Arrays.toString(arr));//[CEMAL, Reha, ZEHRA, ahmet, ahsen]
+        // List  teki elemanlarï¿½ dï¿½zenli sï¿½ralama :String:alfabetik(Natural Order), int:kï¿½ï¿½ï¿½kten bï¿½yï¿½ï¿½e...Collections.sort(name);
 
+        Collections.sort(listIsimler);//String sï¿½rasï¿½
+        System.out.println("listIsimler'de harf sï¿½rasï¿½  : " + listIsimler);
 
-	        //2. Yontem: Olusturdugunuz array'in data type'ini Object olarak secilir
-	        //Object class, Java'da butun class'larin parent'idir.Yani Object class ortak atadir.
-	        //Object class, Java'da parent'i olmayan tek class'dir.
-	        //String, Object class'in child'i oldugundan data type olarak bazi durumlarda
-	        //String yerine Object kullaniriz.
-	        Object arr1[] = listSayilar.toArray();
-	        System.out.println("listSayilar'ýn  array hali: "+Arrays.toString(arr1)+"\n");
+        Collections.sort(listSayilar);//int sï¿½rasï¿½
+        System.out.println("listSayilar'da kï¿½ï¿½ï¿½kten bï¿½yï¿½ge elemanlarï¿½n sï¿½rasï¿½ : " + listSayilar + "\n");
 
-	        System.out.println("******** Array'i list'e çevirme : Arrays.asList(arrName) *********");
+        //***ï¿½nemli*** System.out.println( Collections.sort(list)); -->ï¿½eklinde metod print iï¿½inde ï¿½alï¿½ï¿½maz
 
-	        //asList() methodu array'leri list'e cevirmek icin kullanilir.
-	        //asList() methodu parametre olarak array'in ismini kabul eder.
+        System.out.println("******** List'teki elemanlarï¿½ dï¿½zenli tersten sï¿½ralama : Collections.reverse() *********");
+        Collections.reverse(listSayilar);
+        System.out.println("listSayilar'daki elemanlarï¿½ dï¿½zenli tersten sï¿½ralamasï¿½  = " + listSayilar + "\n");
 
-	        String arr2[] = {"Aliye", "Canan"};
+        ArrayList<Integer> ipek = new ArrayList<>(Arrays.asList(45, 23, 67, -100, 1, 0));
+        System.out.println("ilk hali: reverse olmadan : " + ipek);
+        Collections.reverse(ipek);
+        System.out.println("reverse hali : " + ipek);
 
-	        List<String> list1 = Arrays.asList(arr2);
-	        System.out.println(list1);//[Aliye, Canan]
+        //****ï¿½OOOK ï¿½NEMLï¿½ Sï¿½leyman hoca bile yanlï¿½ï¿½ anlattï¿½....Collections.reverse()--> methodu listteki elemanlarï¿½ index sï¿½rasï¿½na gï¿½re tersten sï¿½ralar.
 
+        System.out.println("******** List'teki elemanlarï¿½ max min elemanï¿½nï¿½ bulma : Collections.max/min() *********");
+        System.out.println("listSayilar deki en bï¿½yï¿½k sayï¿½ = " + Collections.max(listSayilar));
+        System.out.println("listSayilar deki en kï¿½ï¿½ï¿½k sayï¿½ = " + Collections.min(listSayilar) + "\n");
 
-	        //Çook önemli....
-	        // Array'den list'e cevirme yaptiginizda, elde ettiginiz list uzunluk olarak
-	        //esnek degildir.Yani array'den olusturdugunuz list'e ekleme ve cikarma yapamazsiniz.
-	        //list1.add("Emine");//add() yapamazsiniz.Run Time Error verir."UnsupportedOperationException"
+        System.out.println("******** List'teki belli bir deï¿½erdeki elemanlara , baï¿½ka bir deï¿½er atama : Collections.replaceAll() *********");
+        // belli bir deï¿½erdeki elemanlarï¿½ , baï¿½ka bir deï¿½er atar
+        Collections.replaceAll(listSayilar, 33, 9);
+        System.out.println("listSayilar'da 33 deï¿½erindeki elemanlara 9 deï¿½eri atandï¿½  = " + listSayilar + "\n");
+
+        System.out.println("******** List'teki elemanlara aynï¿½ deï¿½eri atama : Collections.fill() *********");
+        Collections.fill(listSayilar, 8);
+        System.out.println("listSayilar'a tï¿½m elemanlara 8 atanadï¿½ = " + listSayilar + "\n");
 
 
-	        System.out.println(Arrays.toString(arr1) + "\n");
+        System.out.println("******** iki list'in eï¿½itliï¿½ini bulma : equals() *********");
+        //Equals :eï¿½it mi deï¿½il mi: name1.equals(name2);--> name1 name2 tï¿½patï¿½p aynï¿½ mï¿½? list teki elemanlarï¿½n hem index hem de iï¿½eriï¿½ini aynï¿½ olmalï¿½
 
-	        System.out.println("******** list'i  boþaltma silme : clear() *********");
-	        //List i boþaltma silme : name.clear();
-	        listIsimler.clear();// isimler list ini boþalt. temizle, elemanlarýný sil.
-	        System.out.println(listIsimler);// [] boþ list verdi.
+        List<String> name1 = new ArrayList<>(Arrays.asList("a", "b"));
+        List<String> name2 = new ArrayList<>(Arrays.asList("b", "a"));
+        List<String> name3 = new ArrayList<>(Arrays.asList("A", "b"));
+        List<String> name4 = new ArrayList<>(Arrays.asList("A", "b"));
+        System.out.println(name1.equals(name2));// name1  name2 ile tï¿½patï¿½p aynï¿½? -->false
+        System.out.println(name1.equals(name3));// name1  name3 ile tï¿½patï¿½p aynï¿½? -->false
+        System.out.println(name3.equals(name4) + "\n");// name3  name4 ile tï¿½patï¿½p aynï¿½? -->true
 
-	}
+        System.out.println("******** list'i Array'a ï¿½evirme : toArray() *********");
+
+        //list'i Array'a ï¿½evirme : toArray();
+        //1. Yontem: toArray() methodu'nun icinde parametre olarak new String[0] kullaniniz
+        String arr[] = listIsimler.toArray(new String[0]);//arr adï¿½nda String tipinde bir array tanï¿½mladï¿½k.isimlerden(List) toArray ile yeni String tipi obj deï¿½erleri atadï¿½k
+        System.out.println("listIsimler'in array hali: " + Arrays.toString(arr));//[CEMAL, Reha, ZEHRA, ahmet, ahsen]
+
+
+        //2. Yontem: Olusturdugunuz array'in data type'ini Object olarak secilir
+        //Object class, Java'da butun class'larin parent'idir.Yani Object class ortak atadir.
+        //Object class, Java'da parent'i olmayan tek class'dir.
+        //String, Object class'in child'i oldugundan data type olarak bazi durumlarda
+        //String yerine Object kullaniriz.
+        Object arr1[] = listSayilar.toArray();
+        System.out.println("listSayilar'ï¿½n  array hali: " + Arrays.toString(arr1) + "\n");
+
+        System.out.println("******** Array'i list'e ï¿½evirme : Arrays.asList(arrName) *********");
+
+        //asList() methodu array'leri list'e cevirmek icin kullanilir.
+        //asList() methodu parametre olarak array'in ismini kabul eder.
+
+        String arr2[] = {"Aliye", "Canan"};
+
+        List<String> list1 = Arrays.asList(arr2);
+        System.out.println(list1);//[Aliye, Canan]
+
+
+        //ï¿½ook ï¿½nemli....
+        // Array'den list'e cevirme yaptiginizda, elde ettiginiz list uzunluk olarak
+        //esnek degildir.Yani array'den olusturdugunuz list'e ekleme ve cikarma yapamazsiniz.
+        //list1.add("Emine");//add() yapamazsiniz.Run Time Error verir."UnsupportedOperationException"
+
+
+        System.out.println(Arrays.toString(arr1) + "\n");
+
+        System.out.println("******** list'i  boï¿½altma silme : clear() *********");
+        //List i boï¿½altma silme : name.clear();
+        listIsimler.clear();// isimler list ini boï¿½alt. temizle, elemanlarï¿½nï¿½ sil.
+        System.out.println(listIsimler);// [] boï¿½ list verdi.
+
+    }
 
 }

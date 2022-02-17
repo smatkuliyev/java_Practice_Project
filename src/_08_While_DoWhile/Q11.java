@@ -4,25 +4,25 @@ import java.util.Scanner;
 
 public class Q11 {
 	 /*
-    Girilen pozitif bir sayýnýn tam kare olup olmadýðýný bulunuz,
-    tamkare ise true  deðilse false yazdýrýnýz.
-     Not: sqrt gibi fonksiyonlarý  kullanmayýn.
+    Girilen pozitif bir sayï¿½nï¿½n tam kare olup olmadï¿½ï¿½ï¿½nï¿½ bulunuz,
+    tamkare ise true  deï¿½ilse false yazdï¿½rï¿½nï¿½z.
+     Not: sqrt gibi fonksiyonlarï¿½  kullanmayï¿½n.
      Example 1:
      Input: 16
      Output: true
-     Not: bu sayý tamkare çünkü 4*4 = 16
+     Not: bu sayï¿½ tamkare ï¿½ï¿½nkï¿½ 4*4 = 16
      Example 2:
      Input: 25
      Output: true
-     Note: bu sayý tamkare çünkü 5*5=25
+     Note: bu sayï¿½ tamkare ï¿½ï¿½nkï¿½ 5*5=25
      Example 3:
      Input: 14
      Output: false
   */
 
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-        System.out.print("bir sayý giriniz : ");
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("bir sayï¿½ giriniz : ");
         int sayi = scan.nextInt();
 
         int count = 0;
@@ -36,10 +36,10 @@ public class Q11 {
             count++;
         }
         if (a == false) {
-        	System.out.println("false");
+            System.out.println("false");
         }
-        
+
         scan.close();
-	}
+    }
 
 }
